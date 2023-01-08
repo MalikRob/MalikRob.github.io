@@ -1,0 +1,272 @@
+/* Global stylesheet
+--------------------------------*/
+body {
+    background: #C0C0C0;
+    color: #343434;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  h1 {
+    font-size: 100px;
+    line-height: 1;
+  }
+  
+  h2 {
+    font-size: 45px;
+  }
+  h1, h2 {
+    font-weight: 400;
+    margin: 0;
+  }
+  .column {
+    float: left;
+    width: 50%;
+    margin-left: 50px;
+    padding-right: 10%;
+  }
+  .column2 {
+    margin-left: 50px;
+  }
+  
+  .abilityTitle {
+    font-style: italic;
+  }
+  div + h4 {
+    font-style: italic;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  h4 {
+    font-style: italic;
+    margin-bottom: 0;
+  }
+  select, button {
+    color: #F7FFF7;
+    background: #00008b;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+  }
+h3 {
+  margin-bottom: 0;
+}
+textarea {
+  margin-top: 0;
+}
+  
+  /* Header
+  --------------------------------*/
+  header {
+    background-color: #00008b;
+    color: #F7FFF7;
+  }
+  
+  /* Footer
+  --------------------------------*/
+  footer {
+    background: #343434;
+    color: #F7FFF7;
+    text-align: center;
+  }
+  .contact-list {
+    list-style-type: none;
+    padding: 0;
+  
+  }
+  .contact-list a {
+    padding: 15px;
+    display: inline-block;
+  }
+  
+  /* Stat Line
+  --------------------------------*/
+  .str, .dex, .con, .int, .will, .per, .cha {display: inline;}
+  
+  .strPH, .dexPH, .conPH, .intPH, .willPH, .perPH, .chaPH {display: inline;}
+  
+  /* Trait Indicator
+  --------------------------------*/
+  .traits, .numOfT {
+    display: inline;
+  }
+  .traitsPH, .numOfTPH {
+    display: inline;
+  }
+  .myDiv { 
+    display: block;
+    padding-top: 25px;
+    margin-bottom: 20px;
+  }
+  
+  /*Trait Buttons
+  -------------------------------*/
+  #ttitle, #lttitle, #traits, #ltraits {
+    display: inline;
+    margin: 20px;
+  }
+  
+  #lttitle {
+    margin-left: 55px;
+  }
+  
+  /* Recommended Races
+  --------------------------------*/
+  .races, .qRace {
+    display: inline;
+  }
+  
+  /* Skill Priority Lining
+  --------------------------------*/
+  .Fprimary, .pris {
+    display: inline;
+  }
+  .Fsecondary, .secs {
+    display: inline;
+  }
+  .Ftertiary, .ters {
+    display: inline;
+  }
+  .Fprimary, .prisPH {
+    display: inline;
+  }
+  .Fsecondary, .secsPH {
+    display: inline;
+  }
+  .Ftertiary, .tersPH {
+    display: inline;
+  }
+  .my2Div { 
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .my3Div { 
+    display: block;
+    padding-top: -30px;
+    padding-bottom: 25px;
+  }
+
+  .primary {
+    margin-top: -15px;
+  }
+  .secondary {
+    margin-top: -15px;
+  }
+  .tertiary {
+    margin-top: -15px;
+  }
+
+  .primaryPH {
+    margin-top: -15px;
+  }
+  .secondaryPH {
+    margin-top: -15px;
+  }
+  
+  /* Section Spacing
+  --------------------------------*/
+  .statarea {
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+  .skillsarea {
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+  
+  
+  /*Equipment and Abilities*/
+  .content-wrap {
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+  .racearea {
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+  
+  /* The navigation menu */
+  .navbar {
+    overflow: hidden;
+    background-color:#00008b;
+    border-radius: 4px;
+    width: 390px;
+  }
+  
+  /* Navigation links */
+  .navbar p {
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  /* The subnavigation menu */
+  .subnav {
+    float: left;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+  
+  /* Subnav button */
+  .subnav .subnavbtn {
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    border-radius: 4px;
+  }
+  
+  /* Add a grey background color to navigation links on hover */
+  .navbar p:hover, .subnav:hover, .subnavbtn {
+    background-color: grey;
+    border-radius: 4px;
+  }
+  
+  /* Style the subnav content - positioned absolute */
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 70px;
+    background-color: grey;
+    width: 25%;
+    border-radius: 4px;
+  }
+  
+  /* Style the subnav links */
+  .subnav-content p {
+    float: left;
+    border-radius: 4px;
+  }
+  
+  /* Add a grey background color on hover */
+  .subnav-content p:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  /* When you move the mouse over the subnav container, open the subnav content */
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+  
+  /* Copy Buttons
+  --------------------------------*/
+  .skillButton {
+    margin-top: 10px;
+    margin-bottom: -10px;
+  }
