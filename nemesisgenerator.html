@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+  <html lang="en">
+    <head>
+      <title>Nemesis Generator</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@400;600&display=swap" rel="stylesheet1">
+      <link rel="stylesheet2" href="testdes.css">
+    </head>
+    <body>
+      <main>
+        <!-- ***********************  TITLE  *********************** -->
+        <header>
+          <h1 align="center">Nemesis Generator </h1>
+        </header>
+        <div class="row">
+        <div class="column">
+        <!-- ***********************  ARCHETYPES  *********************** -->
+        <section>
+          <h3>Archetype</h3>
+          <select id="archetype" name="archetype" onChange="createSelect()">
+            <option value="">(select one)</option>
+            <option value="1">Bulwark</option>
+            <option value="2">Berserker</option>
+            <option value="3">Trickster</option>
+            <option value="4">Duelist</option>
+            <option value="5">Shank</option>
+            <option value="6">Ranger</option>
+            <option value="7">Marksman</option>
+            <option value="8">Powerhouse</option>
+            <option value="9">Speedster</option>
+            <option value="10">Blaster</option>
+            <option value="11">Brute</option>
+          </select>
+        </section>
+        <!-- ***********************  STAR RATINGS  *********************** -->
+        <section>
+          <h3>Star Rating</h3>
+          <select id="stars" name="Star Rating" onChange="onChange()">
+            <option value="">(select one)</option>
+            <option value="1">1 Star</option>
+            <option value="2">2 Star</option>
+            <option value="3">3 Star</option>
+            <option value="4">4 Star</option>
+            <option value="5">5 Star</option>
+            <option value="6">6 Star</option>
+          </select>
+        </section>
+        <!-- ***********************  TRAIT COUNT  *********************** -->
+        <div class="myDiv">
+          <p class="traits">Trait Rolls: </p>
+          <p class="numOfT">0</p>
+        </div>
+        <!-- ***********************  RACES  *********************** -->
+        <section>
+          <h3>Race</h3>
+          <select id="race" name="race" onChange="raceSelect()">
+            <option value="">(select one)</option>
+            <option value="1">Arachnoid: Spider/Scorpion</option>
+            <option value="2">Titan</option>
+            <option value="3">Hao(The Collective)</option>
+            <option value="4">Ork</option>
+            <option value="5">Human</option>
+            <option value="6">Halfling</option>
+            <option value="7">Minotaur</option>
+            <option value="8">Earth Child</option>
+            <option value="9">Water Child</option>
+            <option value="10">Fire Child</option>
+            <option value="11">Force Child</option>
+            <option value="12">Air Child</option>
+            <option value="13">Light Child</option>
+            <option value="14">Lightning Child</option>
+            <option value="15">Void Walker</option>
+            <option value="16">Galvan</option>
+            <option value="17">Krabocron</option>
+            <option value="18">Dryad</option>
+            <option value="19">Uplifted</option>
+            <option value="20">Karia</option>
+            <option value="21">Mitra</option>
+            <option value="22">Basker</option>
+            <option value="23">Mahntral</option>
+            <option value="24">Squat</option>
+            <option value="25">Necro-Person</option>
+            <option value="26">Clone</option>
+            <option value="27">Gigaloth</option>
+            <option value="28">Puplets</option>
+            <option value="29">Squall</option>
+            <option value="30">Chitterling</option>
+            <option value="31">Aquarian</option>
+            <option value="32">Squidhat</option>
+            <option value="33">Piscine</option>
+            <option value="34">Saurian</option>
+          </select>
+          <div class="myDiv">
+            <p class="races">Qualifying Races: </p>
+            <p class="qRace">-</p>
+          </div>
+        </section>
+        <!-- ***********************  TRAITS  *********************** -->
+        <section>
+          <h3 id="ttitle">Traits</h3>
+          <h3 id="lttitle">Legendary Traits</h3>
+          <div>
+            <button id="traits" onclick="createClick()">1d70 Traits</button> <button id="ltraits" onclick="createClick2()">1d11 Legendary Traits</button>
+          </div>
+        </section>
+        <!-- ***********************  STATS  *********************** -->
+        <section class="statarea" id="statarea">
+          <button class="statButton" onclick="CopyToClipboard('statarea2');return false;">Copy text</button>
+          <div id="statarea2">
+            <h3>Full Sheet</h3>
+            STR: 
+            <p class = "str">-</p>
+            <br>
+            DEX: 
+            <p class = "dex">-</p>
+            <br>
+            CON: 
+            <p class = "con">-</p>
+            <br>
+            INT: 
+            <p class = "int">-</p>
+            <br>
+            WILL: 
+            <p class = "will">-</p>
+            <br>
+            PER: 
+            <p class = "per">-</p>
+            <br>
+            CHA: 
+            <p class = "cha">-</p>
+        </section>
+        <!-- ***********************  SKILLS  *********************** -->
+        <section class="skillsarea" id="skillsarea">
+        <button class="skillButton" onclick="CopyToClipboard('skillsarea2');return false;">Copy text</button>
+        <div id="skillsarea2">
+        <h4>Skills:</h4>
+        <div class="my3Div">
+        <h5 class="Fprimary">Primary</h5>
+        <p class="pris">0</p>
+        </div>
+        <textarea class="primary" name="skills" rows="3" cols="30" placeholder="Remove and Add at your discretion."></textarea>
+        <div class="my2Div">
+        <h5 class="Fsecondary">Secondary</h5>
+        <p class="secs">0</p>
+        </div>
+        <textarea class="secondary" name="skills" rows="3" cols="30" placeholder="Remove and Add at your discretion."></textarea>
+        <div class="my2Div">
+        <h5 class="Ftertiary">Tertiary</h5>
+        <p class="ters">0</p>
+        </div>
+        <textarea class="tertiary" name="skills" rows="3" cols="30" placeholder="Remove and Add at your discretion."></textarea>
+        </div>
+        </section>
+        <!-- ***********************  EQUIPMENT  *********************** -->
+        <section>
+        <div class="content-wrap">
+        <button class="abilityButton" onclick="copyEq()">Copy text</button>
+        <h4>Equipment:</h4>
+        <p class>Baseline: Highest Qualifying Weapons with Tier 2 Light Armor or Tier 1 Medium/Heavy</p>
+        <p class="archArmor">None Specific</p>
+        <div class="navbar">
+        <div class="subnav">
+        <button class="subnavbtn">Armor <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+        <select name="lightArmor" id="lightArmor" onChange="createSelectEAL()">
+        <option value=" ">Light Armor(select one)</option>
+        <option value="1">Standard-Issue Combat Armour</option>
+        <option value="2">Light-Weave Coat</option>
+        <option value="3">Skirmisher Suit</option>
+        <option value="4">Drakeling-Class Protector</option>
+        <option value="5">Spectre Armour</option>
+        <option value="6">Quicksilver Nanosuit</option>
+        </select>
+        <select name="mediumtArmor" id="mediumArmor" onChange="createSelectEAM()">
+        <option value=" ">Medium Armor(select one)</option>
+        <option value="7">Red Crystal Coat</option>
+        <option value="8">Safetree-Core Suit</option>
+        <option value="9">Basic Infantry Armour</option>
+        <option value="10">GUTS Defender</option>
+        <option value="11">Avenger Armour</option>
+        <option value="12">Valkyrie Aerial Combat Suit</option>
+        </select>
+        <select name="heavyArmor" id="heavyArmor" onChange="createSelectEAH()">
+        <option value=" ">Heavy Armor(select one)</option>
+        <option value="13">Heavy-Duty Ceramic</option>
+        <option value="14">Dragon Scale Mail</option>
+        <option value="15">PRIDE Armour</option>
+        <option value="16">Hao Reborn Exosuit</option>
+        <option value="17">INVICTUS</option>
+        <option value="18">Garm Infantry-Class Power Armor</option>
+        </select>
+        </div>
+        </div>
+        <div class="subnav">
+        <button class="subnavbtn">Harnesses <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+        <select name="harness" id="harness" onChange="createSelectEH()">
+        <option value=" ">(select one)</option>
+        <option value="bareeh">Bare Emitter Harness</option>
+        <option value="threadedh">Threaded Harness</option>
+        <option value="jacketede">Jacketed Emitter</option>
+        <option value="emitterp">Emitter Prototype</option>
+        <option value="portablesg">Portable Shield Generator</option>
+        </select>
+        </div>
+        </div>
+        <div class="subnav">
+        <button class="subnavbtn">Fields <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+        <select name="kineticS" id="kineticS" onChange="createSelectKF()">
+        <option value=" ">Kinetic(select one)</option>
+        <option value=1>"Vest" Low-Grade Force Field, Slots: 1</option>
+        <option value=2>"Kite" Low-Grade Force Field, Slots: 1</option>
+        <option value=3>"Warden" Standard-Grade Force Field, Slots: 2</option>
+        <option value=4>"Target" Standard-Grade Force Field, Slots: 2</option>
+        <option value=5>"Kevlar" Mid-Grade Force Field, Slots: 3</option>
+        <option value=6>"Tower" Mid-Grade Force Field, Slots: 3</option>
+        <option value=7>"Knight" High-Grade Force Field, Slots: 4</option>
+        <option value=8>"Riot" High-Grade Force Field, Slots: 4</option>
+        <option value=9>"Concrete" Great-Grade Force Field, Slots: 5</option>
+        <option value=10>"Deflector" Great-Grade Force Field, Slots: 5</option>
+        <option value=11>"Stonewall" Heavy-Grade Force Field, Slots: 6</option>
+        <option value=12>"Aegis" Heavy-Grade Force Field, Slots: 6</option>
+        </select>
+        <select name="energyS" id="energyS" onChange="createSelectEF()">
+        <option value=" ">Energy(select one)</option>
+        <option value=1>"Curtain" Light Shield, Slots: 1</option>
+        <option value=2>"Buckler" Light Shield, Slots: 1</option>
+        <option value=3>"Trooper" Standard Shield, Slots: 2</option>
+        <option value=4>"Disc" Standard Shield, Slots: 2</option>
+        <option value=5>"Diversion" Medium Shield, Slots: 3</option>
+        <option value=6>"Mirror" Medium Shield, Slots: 3</option>
+        <option value=7>"Blank" High Shield, Slots: 4</option>
+        <option value=8>"Pool" High Shield, Slots: 4</option>
+        <option value=9>"Limiter" Great Shield, Slots: 5</option>
+        <option value=10>"Sky Catcher" Great Shield, Slots: 5</option>
+        <option value=11>"Fractal" Heavy Shield, Slots: 6</option>
+        <option value=12>"Blast Barrier" Heavy Shield, Slots: 6</option>
+        </select>
+        </div>
+        </div>
+                  <div class="subnav">
+        <button class="subnavbtn">Melee Weapon <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+        <select name="swords" id="swords" onChange="createSelectMWS()">
+        <option value=" ">Swords(select one)</option>
+        <option value=1>THRUSTING SWORDS</option>
+        <option value=1>Pointed Rod</option>
+        <option value=2>Rapier</option>
+        <option value=3>Achille Pricker</option>
+        <option value=4>Pappenheimer</option>
+        <option value=5>Docciolini's Relic</option>
+        <option value=6>SLASHING SWORDS</option>
+        <option value=6>Arming Sword</option>
+        <option value=7>Makhaira</option>
+        <option value=8>Cutlass</option>
+        <option value=9>Greatsword</option>
+        <option value=10>Zweihander</option>
+        <option value=11>GREAT SWORDS</option>
+        <option value=11>Longsword</option>
+        <option value=12>Zweihander Sr</option>
+        <option value=13>Claymore</option>
+        <option value=14>Longersword</option>
+        <option value=15>Longestsword</option>
+        </select>
+          <select name="daggers" id="daggers" onChange="createSelectMWDAG()">
+        <option value=" ">Daggers(select one)</option>
+        <option value=1>HEAVY DAGGERS</option>
+        <option value=2>Parzonium</option>
+        <option value=3>Anelace</option>
+        <option value=4>Cinquedea</option>
+        <option value=5>Pugio</option>
+        <option value=6>The Spike</option>
+        <option value=7>SLASHING DAGGERS</option>
+        <option value=8>Baselard</option>
+        <option value=9>Kukri</option>
+        <option value=10>Tanto</option>
+        <option value=11>Peshkabz</option>
+        <option value=12>Bloodletter</option>
+        <option value=13>PIERCING DAGGERS</option>
+        <option value=14>Stiletto</option>
+        <option value=15>Dirk</option>
+        <option value=16>Gunong</option>
+        <option value=17>Malappuram Kathi</option>
+        <option value=18>Hornet's Kiss</option>
+        </select>
+          <select name="clubs" id="clubs" onChange="createSelectMWCL()">
+        <option value=" ">Clubs(select one)</option>
+        <option value=1>LIGHT CLUBS</option>
+        <option value=2>War Baton</option>
+        <option value=3>Blackjack</option>
+        <option value=4>Tonfa</option>
+        <option value=5>Jiăn</option>
+        <option value=6>Tipstaff</option>
+        <option value=7>HEAVY CLUBS</option>
+        <option value=8>Mace</option>
+        <option value=9>Greatclub</option>
+        <option value=10>Bang</option>
+        <option value=11>Kanabo</option>
+        <option value=12>Log with a handle</option>
+        <option value=13>IMPACTOR CLUBS</option>
+        <option value=14>One Pump Chump</option>
+        <option value=15>Bonkinator</option>
+        <option value=16>Missing</option>
+        <option value=17>12 Gauge Homerun Bat</option>
+        <option value=18>Missing</option>
+        </select>
+          <select name="halberds" id="halberds" onChange="createSelectMWHAL()">
+        <option value=" ">Halberds(select one)</option>
+        <option value=1>LIGHT HALBERDS</option>
+        <option value=2>Ge</option>
+        <option value=3>Welsh Hook</option>
+        <option value=4>Guisarme</option>
+        <option value=5>Naginata</option>
+        <option value=6>Ranseur</option>
+        <option value=7>HEAVY HALBERDS</option>
+        <option value=8>Bardiche</option>
+        <option value=9>Swiss Voulge</option>
+        <option value=10>Woldo</option>
+        <option value=11>Fauchard</option>
+        <option value=12>Bill</option>
+        </select>
+          <select name="staves" id="staves" onChange="createSelectMWSTA()">
+        <option value=" ">Staves(select one)</option>
+        <option value=1>LIGHT STAVES</option>
+        <option value=2>Quarterstaff</option>
+        <option value=3>Ghioaga</option>
+        <option value=4>Jō</option>
+        <option value=5>Tahtib</option>
+        <option value=6>Silverwood Core</option>
+        <option value=7>HEAVY STAVES</option>
+        <option value=8>Battering Ram</option>
+        <option value=9>Metalbranch</option>
+        <option value=10>Bō</option>
+        <option value=11>Jogo do Pau</option>
+        <option value=12>Pillar of Divinity</option>
+        </select>
+        </div>
+        </div>
+        </div>
+        <textarea class="equipment" name="equipment" id="equipment" rows="10" cols="50" placeholder="Remove and Add at your discretion."></textarea>
+        </div>
+        </section>
+        <!-- ***********************  ABILITIES  *********************** -->
+        <section class="abarea">
+        <div class="content-wrap">
+        <button class="abilityButton" onclick="copyAb()">Copy text</button>
+        <h4 class="abilityTitle">Abilities:</h4>
+        <textarea class="abilities" id="abilities" name="abilities" rows="10" cols="50" placeholder="Remove and Add at your discretion."></textarea>
+        </div>
+        </section>
+        <!-- ***********************  RACIAL TRAITS  *********************** -->
+        <section class="racearea">
+        <button class="raceButton" onclick="copyRb()">Copy text</button>
+        <div class="racearea2">
+        <h4 class="raceTcss">Racial Traits:</h4>
+        <textarea class="racial" id="racial" name="racial" rows="10" cols="50" placeholder="Remove and Add at your discretion."></textarea>
+        </div>
+        </section>
+        </div>
+        <!-- ************ SITE BREAKER ************ -->
+        <div class="column2">
+          <!-- ************ SITE BREAKER ************ -->
+          <!-- CREATURES -->
+          <!-- ***********************  PHYSIOLOGIES  *********************** -->
+          <section>
+            <h3>Physiologies</h3>
+            <select id="physiology" name="physiology" onChange="createSelectPH()">
+              <option value="">(select one)</option>
+              <option value="1">Quadruped(Bulk)</option>
+              <option value="2">Quadruped(Lithe)</option>
+              <option value="3">Avian</option>
+              <option value="4">Insectoid</option>
+            </select>
+          </section>
+          <!-- ***********************  STAR RATINGS  *********************** -->
+          <section>
+            <h3>Star Rating</h3>
+            <select id="starsPH" name="Star Rating" onChange="onChangePH()">
+              <option value="">(select one)</option>
+              <option value="1">1 Star</option>
+              <option value="2">2 Star</option>
+              <option value="3">3 Star</option>
+              <option value="4">4 Star</option>
+              <option value="5">5 Star</option>
+              <option value="6">6 Star</option>
+            </select>
+          </section>
+          <!-- ***********************  TRAIT COUNT  *********************** -->
+          <div class="myDiv">
+            <p class="traitsPH">Trait Rolls: </p>
+            <p class="numOfTPH">0</p>
+          </div>
+          <!-- ***********************  TRAITS  *********************** -->
+          <section>
+            <h3 id="ttitle">Traits</h3>
+            <h3 id="lttitle">Legendary Traits</h3>
+            <div>
+              <button id="traits" onclick="createClickPH()">1d21 Traits</button> <button id="ltraitsph" onclick="createClick2PH()">1d12 Legendary Traits</button>
+            </div>
+          </section>
+          <!-- ***********************  STATS  *********************** -->
+          <section class="statarea" id="statarea">
+            <button class="statButton" onclick="CopyToClipboard('statarea2PH');return false;">Copy text</button>
+            <div id="statarea2PH">
+              <h3>Full Sheet</h3>
+              STR: 
+              <p class = "strPH">-</p>
+              <br>
+              DEX: 
+              <p class = "dexPH">-</p>
+              <br>
+              CON: 
+              <p class = "conPH">-</p>
+              <br>
+              INT: 
+              <p class = "intPH">-</p>
+              <br>
+              WILL: 
+              <p class = "willPH">-</p>
+              <br>
+              PER: 
+              <p class = "perPH">-</p>
+              <br>
+              CHA: 
+              <p class = "chaPH">-</p>
+          </section>
+          <!-- ***********************  SKILLS  *********************** -->
+          <section class="skillsarea" id="skillsarea">
+          <button class="skillButton" onclick="CopyToClipboard('skillsarea2PH');return false;">Copy text</button>
+          <div id="skillsarea2PH">
+          <h4>Skills:</h4>
+          <div class="my3Div">
+          <h5 class="Fprimary">Primary</h5>
+          <p class="prisPH">0</p>
+          </div>
+          <textarea class="primaryPH" rows="3" cols="30" placeholder="Remove and Add at your discretion."></textarea>
+          <div class="my2Div">
+          <h5 class="Fsecondary">Secondary</h5>
+          <p class="secsPH">0</p>
+          </div>
+          <textarea class="secondaryPH" rows="3" cols="30" placeholder="Remove and Add at your discretion."></textarea>
+          </div>
+          </section>
+          <!-- ***********************  ABILITIES  *********************** -->
+          <section class="abarea">
+          <div class="content-wrap">
+          <button class="abilityButtonPH" onclick="copyAbPH()">Copy text</button>
+          <h4 class="abilityTitle">Abilities:</h4>
+          <textarea class="abilitiesPH" id="abilitiesPH" name="abilities" rows="10" cols="50" placeholder="Remove and Add at your discretion."></textarea>
+          </div>
+          </section>
+          </div>
+        </div>
+        <!-- *****************  CONTACT / COPYRIGHT  ***************** -->
+        <footer>
+          <div class="content-wrap">
+            <h2>Built for Torchbearer: Providence!</h2>
+            <!-- Social media and contact links. Add or remove any networks. -->
+            <ul class="contact-list">
+              <li>
+                <p>&#169; Copyright: Watchmaker</p>
+              </li>
+              <li>Website Made By: Blonk</li>
+              <li><a href="https://discord.gg/9jGKkp8m9M" target="_blank">Join The Discord</a></li>
+            </ul>
+          </div>
+        </footer>
+        <script>
+          function CopyToClipboard(id)
+          {
+          var r = document.createRange();
+          r.selectNode(document.getElementById(id));
+          window.getSelection().removeAllRanges();
+          window.getSelection().addRange(r);
+          document.execCommand('copy');
+          window.getSelection().removeAllRanges();
+          }
+        </script>
+      </main>
+    </body>
+  </html>
