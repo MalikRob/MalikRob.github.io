@@ -41,9 +41,11 @@
 
 .primedis {
   font-family: "Nova Square";
+  font-size: 100px;
 }
 .goldtextcss {
   color: #FFD700;
+  font-size: 100px;
 }
 
 .bottom {
@@ -51,8 +53,6 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 0px;
   grid-auto-rows: minmax(100px, auto);
-  margin-left: 180px;
-  margin-top: 10px;
   border: 10px solid;
   border-color: black;
 }
@@ -78,10 +78,24 @@
   margin-left: 33%;
 }
 
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 98%;
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 300px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
   .bottom {grid-template-columns: repeat(1, 1fr);}
 }
-
