@@ -1,131 +1,68 @@
-/* The sidebar menu */
-.sidenav {
-  width: 160px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #D3D3D3; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-left: 20px;
-  border: 1px solid #D3D3D3;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Torchbearer: Providence</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="https://malikrob.github.io/tpdes.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nova Square"/>
+<link href="https://fonts.cdnfonts.com/css/comics" rel="stylesheet">
+</head>
+<body>
+<div id="page-container">
+<div id="content-wrap">
 
-.nottitle {
-  padding: 6px 8px 6px 16px;
-}
+<!-- Side navigation -->
+<div class="sidenav">
+    <div class="nottitle">
+    <h2><b>Torchbearer: Providence</b></h2>
+    </div>
+    <a target="_blank" href="https://docs.google.com/document/d/1lj7cDvRwA88ThdrOUrQv1INefeZb15I0jnNo-C-dCH0/edit?usp=sharing">Races & Backgrounds</a>
+    <a target="_blank" href="https://docs.google.com/document/d/1rsxHUt2cuyxIZgJaTvU-dONOybzMWZVCAocB6aOCoRk/edit?usp=sharing">Weapons & Armor</a>
+    <a target="_blank" href="https://docs.google.com/document/d/1Ott8LrzH68oul3DJjJnRInJlrQYecJviMLUoz9Az7yo/edit?usp=sharing">Prices</a>
+    <a target="_blank" href="https://docs.google.com/document/d/1-xOeDOuYkxXtA1CdOQdX11HYd0x91bUBA71tp0O6Idk/edit?usp=sharing">Character Sheet Template</a>
+    <a target="_blank" href="https://docs.google.com/document/d/1z7YHlPWM9bWNlBSC3mtu3AdefOD-sVn7J5j-0NGwlRQ/edit?usp=sharing">Lore</a>
+    <a target="_blank" href="https://docs.google.com/document/d/1AZ4Ryu9xmyor9YtrXbC7xYGEmMOjM0TwBcMMlcMY5_0/edit?usp=sharing">Terms</a>
+</div>
 
-/* The navigation menu links */
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #111;
-  display: block;
-}
+<!-- Page content -->
+<div class="main">
+    <div>
+    <h1 class="primedis">Current Setting:</h1>
+    <h1 class="goldtextcss">GOLDEN AGE SUPERHEROICS</h1>
+  </div>
+</div>
 
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #ffffff;
-}
+</div>
 
-/* Style page content */
-.main {
-  margin-left: 170px; /* Same as the width of the sidebar */
-  padding: 0px 10px;
-}
+<!-- Footer -->
 
-.primedis {
-  font-family: "Nova Square";
-  font-size: 100px;
-}
-.goldtextcss {
-  color: #FFD700;
-  font-size: 100px;
-}
+<footer class="bottom" id="footer">
+      <div class="fl1">
+        <h2>Community:</h2>
+        <ul>
+          <li><a target="_blank" href="https://discord.gg/9jGKkp8m9M">Discord</a></li>
+        </ul>
+      </div>
 
-.bottom {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0px;
-  grid-auto-rows: minmax(100px, auto);
-  border: 10px solid;
-  border-color: black;
-  border-radius: 10px;
-}
+      <div class="fl2">
+        <h2>Support:</h2>
+        <ul>
+          <li><a target="_blank" href="https://www.patreon.com/WatchDice/about">Patreon</a></li>
+        </ul>
+      </div>
 
-.bottom a {
-  text-decoration: none;
-  font-size: 20px;
-  color: #111;
-  display: block;
-}
+      <div class="fl3">
+        <h2>Other Works:</h2>
+        <ul>
+          <li><a target="_blank" href="https://forums.spacebattles.com/search/40350224/">Spacebattles</a></li>
+        </ul>
+      </div>
+  <div class="copyr">
+    <p class="incopy">&#169; 2023 Watchmaker | All Rights Reserved</p>
+  </div>
+</footer>
 
-.bottom a:hover {
-  color: silver;
-}
-
-ul {
-  list-style: none;
-}
-
-.fl1 {
-  border-right: 10px solid;
-  border-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.fl2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-right: 10px solid;
-  border-color: black;
-}
-.fl3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.fl1 h2, .fl2 h2, .fl3 h2 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.copyr {
-  background-color: grey;
-  grid-column: 1/4;
-}
-.incopy {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#page-container {
-  position: relative;
-  min-height: 100vh;
-}
-
-#content-wrap {
-  padding-bottom: 2.5rem;    /* Footer height */
-}
-
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 98%;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 300px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-  .bottom {grid-template-columns: repeat(1, 1fr);}
-}
-
+</div>
+</body>
+</html>
