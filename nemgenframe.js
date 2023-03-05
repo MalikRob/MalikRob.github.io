@@ -343,7 +343,7 @@ $(document).ready(function () {
       case "Brute":
         $("#str").text(primary);
         $("#spd").text(secondary);
-        $("#dex").text("1");
+        $("#dex").text(unmodified);
         $("#dur").text("2");
         $("#end").text(primary);
         $("#sen").text(problem);
