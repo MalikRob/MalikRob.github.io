@@ -183,7 +183,7 @@ $(document).ready(function () {
 
       case "Insectoid":
         $("#cstr").text(primary + `/` + secondary);
-        $("#cspd").text(primary);
+        $("#cspd").text(unmodified);
         $("#cdex").text(primary + `/` + secondary);
         $("#cdur").text("2");
         $("#cend").text(primary);
