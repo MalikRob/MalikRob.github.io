@@ -403,6 +403,14 @@ function miscConditions() {
   }
 }
 
+async function accessRaceDoc() {
+
+  const url1 = 'https://malikrob.github.io/testload.txt'
+  const response = await fetch(url1);
+  const data = await response.text();
+  console.log(data);
+}
+
 //TRAITS
 function selectTraits() {
   trait = Math.floor(Math.random() * 74) + 1;
