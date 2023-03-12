@@ -1,5 +1,3 @@
-header("Access-Control-Allow-Origin: *");
-
 Arachnoid
 
 Trait 1
