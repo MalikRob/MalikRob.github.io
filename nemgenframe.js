@@ -405,7 +405,7 @@ function miscConditions() {
 
 async function accessRaceDoc() {
 
-  const url1 = 'https://malikrob.github.io/testload.txt'
+  const url1 = 'https://raw.githubusercontent.com/MalikRob/MalikRob.github.io/main/testload.txt'
   const response = await fetch(url1);
   const data = await response.text();
   console.log(data);
