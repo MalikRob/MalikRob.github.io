@@ -1,7 +1,7 @@
-Arachnoid
+Arachnoid.
 
-Trait 1
+Trait 1.
 
-Trait 2
+Trait 2.
 
-Trait 3
+Trait 3.
