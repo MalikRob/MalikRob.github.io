@@ -15,4 +15,132 @@ Shellheads: Baskers have armor with the following stats: Prot 8, Rel 2, Infinite
 Squishy Turtles: Baskers, under their armor, have only Durability 1. Any power or ability that would increase it instead increases the Prot of their armor by the same amount.
 Pocket Monsters: Baskers may freely swap between Large and Tiny as a number of actions equal to their Speed.
 Spin It To Win It: Baskers gain access to the Unarmed Combat Specialty "Spinning", which allows them to use Speed in place of Strength as a Primary/Secondary Stat.
+#Goblins/Chaos Incarnates
+
+Malleable Form: Chaos Incarnates, despite looking superficially like normal humanoids, have a body that isn't really made up of much more than spite. This grants them the ability to, as a reaction, nullify the injury-promoting effects of called shots and do not take Injuries from Physical Attacks that deal Heavy or lower type damage due to their amorphous nature, though in exchange they have 0 Durability.
+Natural Mages: Chaos Incarnates have a Mana stat inherently, though it costs double the Prog to raise. Being a Mage and certain other powers, abilities and traits may remove this Malus.
+Elemental Solidity: Each Chaos Incarnate can, one per reset as a standard action, solidify into a form resembling one of the other Incarnates at the cost of their Malleable Form trait. While in this form, the Chaos Incarnate adds their Mana to all physical stats and gains access to the racial trait of the Incarnate they copied. This form costs 5 Mana to maintain for a round, increasing by five every round after the first. SL may be soul-burned to continue this transformation, but HL  cannot. While using this trait, they gain a base Durability of 2.
+#Chitterling
+These rodent-like humanoids, ranging from Squirrel to Mouse to Hedgehog to the rare Capybara and many other types all across the rodent kingdom, range aesthetically from "small human with animal traits'' to "anthropomorphic rodent". They claim to hail from an Ocean World of adventure and Piracy, and this is likely true, based on our observations. They arrived on Earth not long after Powers started seriously cropping up. They seem quite... familiar with dimensional travel, Void Rifts, Magic, and the like, so their familiarity with us was never weird, at least to them. 
+Small and Swift: Chitterlings gain +1 Senses and +1 Dexterity from their animalistic sensory organs and small build but have -1 Strength and their Endurance cannot rise above 3 barring supernatural abilities or forces. They are also Small in size.
+Sharp Teeth and Chubby Cheeks: Chitterlings have some very useful and versatile chompers, and some cute little cheek pouches too! Chitterlings can make Unarmed Combat attacks with their teeth that have Durability-ignore equal to their strength. Additionally, they may store 1 Small Shard, Tiny Small Shards, or 4 Miniscule Shards in their cheek pouches, and either use them on themselves as a Free Action akin to an Auto Injector or on an ally as an Action and are able to ignore armor if the target is willing. 
+Playing Dead and Going Feral: Chitterlings, being rodents, are rather… binary, about Panic and Fear. They may Play Dead to pretend to be unconscious or paralyzed by fear, rolling Lie with Endurance as a secondary stat against the target's Insight. Additionally, after reaching 0SL they have a 50% chance to enter Berserk wherein they have +1 to all physical stats (save Senses) and attack enemies before moving onto allies or Terrified wherein they have a 50% increased movement speed. Both conditions last for a number of rounds equal to Willpower or until they are at full SL again, whichever is shorter.
+#Clones
+The first line of humanity, clones are tank grown humans created to act as explorers, adventurers, soldiers, and heroes, and they did it well, better than most, however as time passed and the Terran population settled Clones quickly started to become a people without a purpose and often became drifters in the cosmic sea, using their many talents where they could:
+Old World Paragons: Raised into genetic perfection Clones possess a baseline 3 in physical stats, and 2 in all mental stats, ignoring the standard array, Additionally, due to imprinted memories, all Clones start with an additional 5 skill points in CC to use as they please.
+#Dryads
+Most commonly seen as Gardeners, Merchants and Spies, Dryads are a rather handy bunch known for their sunny personality and air headed nature. Despite their generally laid back and casual demeanor, one is not to underestimate what a child of the Green can pull off.
+Sons and Daughters of Green: Dryads are a plantlike race of humanoids and lack any of the downsides of having proper organs, rendering them immune to most physical injuries and they may also regenerate 1 HL every other round while in direct sunlight or while submerged in water, up to their max HL per reset.
+Plantkin: Dryads possess an innate connection to themselves and the world around them, granting them +1 Will and Charisma but this also leaves them rather air headed, reducing their Int by 1. Dryads may speak to any nearby plants as if they were sentient an amount of times per day equal to half their Will score, most plants will answer truthfully of anything they have seen or sensed within the past 24 hours.
+Curse of Root: A Dryad's plant based biology is far from perfect and renders them vulnerable to Fire and Poison based damage, causing them to have halved and no Durability towards each damage type respectively.
+#Halflings
+Short, a little scrawny, and yet somehow still surviving in spite of both of those things. Halflings are probably the single most well-liked race on average throughout the whole planet. Halflings have the following traits:
+
+Small and squishy: Halflings are considered Small, and have a t increase by 2 per round when staggered.
+Better to be Lucky Than Good: Halflings can reroll all 1s on a given check a number of times equal to their Charisma every reset.
+#Hao
+The Iron Men. Haos are quite simply beyond the abilities of unpowered flesh inherently, and in a one-to-one ratio, can probably take every single other race in a straight fight. There's a reason that these guys were humanity's magic bullet for a while.
+
+Steel-Skinned and Iron-Hearted: Haos have 5 generic stat points, a starting Material Quality 2, and Weight 2, Raising Material quality costs 2 points, and the points can be spread as wanted during CC. All Haos possess an ability to draw upon their previous lives and may expend a full round action to distribute 3 skill points among any skills,  these points may only be reassigned once per IRL day.
+Unbroken, Undaunted, Unstoppable: While Staggered their t only increases from the relevant HL or SL damage instead of passively each round, along with being immune to Injuries reliant on being flesh and blood. However, they cannot regenerate naturally or be helped by Surgery, instead requiring Craft checks as if they were broken armor.
+Juggernaut: Haos cannot wear any armor smaller than a Personal Mech. If a Hao were to die, they can be entirely rebuilt as a T5 Delicate project so long as their head is still intact.
+#Humans
+Despite their lack of visible advantages, humans are a frustratingly adaptable bunch that have managed to keep themselves as pretty integral to every civilization through little other than sheer chutzpah.
+
+We'll Figure It Out: Progress gained from Training, Practice, and Exercise is doubled.
+#Earth: +2 Strength
+Unbreaking Bulwark: They may increase the restriction of any armor worn by their Endurance score.
+#Fire: +2 Willpower
+#Light The Fires Of Your Soul: They may burn 1 SL to add Willpower to a single non-attack roll check once per round during combat.
+#Air: +2 Senses
+All Around You: They may add half their Senses dice to AD and all their Sense checks have -1t.
+#Water: +2 Endurance
+Ripple and Converge:  They automatically downgrade the degree of all attacks made against them, and all light attacks are incapable of giving them physical Injuries.
+#Light: +2 Dexterity
+In A Flash: They may choose to teleport anywhere they can see within their normal movement range rather than move normally as an action, so long as both where they start and where they end is well lit.
+#Lightning:+1 Speed, +1 Will
+Split Second: With a focused surge of power, Children of Lightning may reroll any of their own checks as a reaction, this may be done an amount of times per reset equal to half of either their Speed or Willpower stat.
+#Force: +2 Charisma, a Child of Force may make a small explosion of force propelling them using charisma as a secondary stat when jumping. This ability may be used at almost any time so long as the user is prepared and has the actions to do so. 
+#Inari-Blessed Mitra, aka Kitsune
+Where other Mitra bond heavily to packs  and are physically incapable of betrayal, those who bear the heritage of the Fox Spirits of Asia swear themselves to individuals and causes, being what one could politely term "clingy". They do have a reputation as Tricksters, though that's typically a result of treating their loyalty lightly or simply pissing them off enough.
+
+Heart Of A Warrior, Body Of A Rogue: Kitsune-Mitra are... not exactly the sturdiest around, physically. However, their wills are strong and they have... an excess of force of personality and a way with people. They gain +1 Willpower and +1 Charisma, but -1 Endurance.  Unlike some of their cousins, those who bear the blood of the Nine-Tailed Foxes in their veins have an entirely different innate ability: The power of Illusion.  A Kitsune may spend 1 SL as a Free Action on their turn to increase the t of attacks and Senses/Investigation checks made against them by 1 for one round/check. They can spend as much SL as they like, increasing the t by an additional amount per point.
+The Wise Fox Escapes: If a Kitsune suffers a Trauma from a mental attack that doesn’t specifically inflict one kind of status effect, it's automatically Terrified.
+Deft Hands: Kitsune can add Willpower to Sleight of Hand as either a Secondary or Primary stat as they possess supernatural grace.
+#Mahntral
+These leonine folk simply are. There’s not too much to say about the prideful cat-folk, but they certainly have a lot to be proud of. They possess the following traits:
+
+Obvious Predator: Mahntral's are gigantic buff cat people that are generally based on lions. As such they happen to be obligate carnivores and retain some animal advantages. They possess +2 to Dexterity and Speed but their Will takes twice the Prog to raise.
+Sheathed Claws: Mahntrals possess clawed nails that typically stay somewhat retracted, as a free action they can unsheathe these to gain a boost to their Unarmed checks of +4 dice and +4 DT. One can also choose to specialize in their claws.
+Glorious Mane: Mahntral's possess a mane of hair around their throat regardless of gender that lowers the t on all Threaten/Convince checks by 1.
+#Menehune
+
+Tiny Geniuses: Menehunes are a race of incredibly smart dwarves with frog-like features, they gain a +1 to Intelligence and all skills that are lower or equal to their Intelligence score have its cost to grow halved.
+Tiny People In General, Really: Menehunes are considered to be size category Tiny and gain 3 dice per point of Dexterity rather than 2.
+#Minotaurs
+Take the rage of Orks and the size of Titans, then toss it into one very angry, very powerful package. Behold, Minotaurs:
+
+Bloodbath: Minotaurs gain +1 Strength, Endurance, and Durability. Additionally, all Strife gained in combat is multiplied by 1.5.
+Seeing Red: Minos take a stacking 1 SL damage per round after staying in combat for a number of rounds equal to Willpower. This can be recovered with Serenity as if they were an Elementalist, this damage does not inflict injuries, but if they hit 0 they automatically enter the Berserk condition.
+#Mitra
+
+These extremely friendly canine folks come in all sorts, from wolf, to dog, to coyote, to  fox, to jackal. It's possible, but not proven, that Terran legends such as Kitsune, Cynocephales, Anubis, and Old Coyote were influenced by them, but this is often discounted by the historians of both races. Nevertheless, they share qualities in common with these legends, and their appearances ranges from "a slightly beastly humanoid" to "holy fuck, that wolf is bipedal and wears clothes". The fact that they've named themselves after a universally recognized word for friend shows the true nature of this canine folk.
+
+Brave Heart, Frail Body: Mitra are... not exactly the sturdiest around, physically. However, their wills are strong and they have... an excess of force of personality and a way with people. They gain +1 Willpower and +1 Charisma, but -1 Endurance.  Mitra are also latent Psions. This grants them the ability to, as a Free Action, body block for any ally within 20 feet of themselves as their sheer desire to protect their chosen pack drives them forward. They may also "mind block", which applies the Body Block rules to mentalist attacks.
+There's No Such Thing As A Bad Dog: Mitra are exceedingly loyal to those they choose as their pack, refusing to take any action they deem as disloyal to their pack. If they attempt to make a decision they perceive as disloyal, they must make a nerve check with a DC of at absolute minimum their Willpower dice. Anyone attempting to persuade a Mitra that an action they would otherwise perceive as disloyal is, in fact living up to their loyalties must meet a Convince DC equal to the Mitra's Serenity dice. (As in Serenity+Willpower.). However, their sheer desire to protect others manifests in their ability to retain their full Active Defense while Body Blocking.
+Unconditional Love Is A Terrible Thing: If a Mitra or their pack is betrayed in a substantial manner by a pack member, the Mitra in question goes into a blood rage, seeking to rend the traitor limb from limb. In this state, they add Willpower as a Secondary dice to all rolls and ignore the Staggered condition for a number of rounds equal to their Willpower stat, doing everything in their power to put the traitor down and not listening to reason.
+#Necromen
+Those afflicted by the curse of Unmaking are known as Necromen or the Unmade, born from the folly of explorers taking what was not theirs, now many Necromen wander the world looking to cure the affliction, though many use the chance to revel in undeath.
+
+Accursed Rotted Thing: Necromen's undead vitality grants them +2 Strength and +2 Endurance as well as -1 Dexterity as well as complete immunity to all status effects or Injuries that rely on the target being alive. This also however renders them slow to change, doubling the Prog requirement to advance Strength and Endurance.
+Cold Flesh and Stilled Heart: No blood flows in a Necromen's veins, rendering them immune to environmental cold damage and halving the DT of any cold-based attacks. However, their dry flesh and bones leaves them vulnerable to fire, causing them to take double environmental heat damage and halving the user's Durability against fire.
+Undying: Necromen are effectively undying. While staggered t only increases by 1 every other round. Necromen are also unfortunately unable to naturally heal, relying on Surgery and first aid to heal any damage (1 HL per two Successes after the damage has been downgraded to Light). If a Necromen were to fall in combat but remain mostly intact, a T3 Delicate Biology craft check may be performed on their body to resurrect them.
+#Orks
+Shorter than Titans, Orks are nevertheless considered just as terrifying an opponent due to their ability to grow actively and sometimes vastly stronger during combat. Orks have the following traits:
+
+Dumb As A Brick: Orks are, generally, not the brightest of light bulbs. An Ork's Intelligence is capped at 1 during CC in addition to the naturally assigned 1 and requires 2x Prog to raise naturally.
+Barely Tickled: Orks generally are really hard to keep down, gaining +2 Durability at CC.
+Ghaz's Echoes: Every round of combat, an Ork gains +1  dice to all stats, including Intelligence. This stacks a number of times equal to the Ork's Endurance unmodified by this ability. This ability lasts for 2d2 rounds after hostilities finish.
+Up Close and Personal: Ork's only add 1 dice per point in Sense to all Ranged weapon attacks, as they find it incredibly hard to focus on faraway enemies without giving into the urge to get in fightin' range.
+#Piscine
+
+Strength From The Deep: Piscine can breathe underwater and seem to be stronger, faster, and sturdier underwater. Conversely, they do poorly in extremely arid environments. They gain +1 to Strength, Endurance, and Dexterity when wet, +2 when Submerged, -1 when Dry, and -2 when Dehydrated. Due to this, they tend to require specialized armor or other apparatuses typically built into clothing or other gear to maintain optimal health and function.
+#The Blubberkin: They gain 2 HL per Endurance rank, but only 1 Active Defense per Dexterity, barring power interactions and other things.
+#The Lurkers: Can add Endurance as a Secondary stat to Stealth, but their Endurance is capped at 4 and they halve their Charisma Dice for Convince and Lie checks. 
+#The Fragile Death: Gain an additional dice per rank in Acrobatics and Durability is set to 0. They may use Endurance as a secondary stat for Unarmed Attacks when using the poisonous aspect of their biology. When any HL is lost to their Unarmed attacks, the target must make an Endurance check equal to the user's Endurance(increasing by 1 for each attack that removes HL) and, upon a failure, is stunned for 1d3 rounds. Grappled targets must also make this check.
+#Leapers: They may Jump with their Dexterity stat. After successfully Jumping a number of feet, the user may Glide twice that distance in a direction of their choosing. Be careful about going Up, and well, Down. They are also flighty creatures. Their Will dice is halved for the purposes of panic-related Serenity checks, and when suffering a Mental Trauma the first one will always be Terrified or Fleeing.
+#The Undying: Can rise from the dead after a number of resets equal to 10-Endurance as long as a piece of them equal or greater in size to a human limb remains. However, other pieces may also regrow, and this often leads to conflict, though it is possible to persuade one's sibling-clone-children to fuck off or to work with them. However, they may not revive if killed by poison or certain other effects, their Endurance is locked at 3 barring power interactions, and they take half dice on all Intelligence-based Checks due to their multiple brains struggling to remain in sync.
+#Scout Caste: +1 Senses and Dexterity but -1 Strength and Endurance from their small, agile builds and sharp senses.
+#Warrior Caste: They gain +1 Endurance and Strength but -1 to Intelligence and Perception, as though they are excellent warriors, they are not the sharpest tools in the shed. They also have a tail they can specialize in for Unarmed Combat.
+#Shaman Caste: They gain +1 Willpower and Intelligence but -1 Strength and Dexterity as they are wise but relatively frail and slow.
+#Shiny Feathers and Lizard Tails: All saurians have rather pretty feathers in various shades, though the different castes and individual Saurians differ in placement, coloring, and abundance. These feathers and their naturally social minds grant them -1t to Convince and Threaten checks.
+From A Rougher Era: Saurians can ignore the effects of being in Stagger for a number of turns equal to their Endurance.
+I Don't Trust That Fucking Thing: When using technologically advanced weaponry (guns and the like, mostly), Saurians only add Half the dice the relevant stats grant(minimum 1), as they have an instinctive distrust for the blinking lights and clacking noises, showing a distinct preference for Power Constructs and Magic Items.
+#Lamia: They have a large tail instead of legs which is a single, large Called Shot target. Lamias cannot jump, have halved acrobatics dice for movement purposes and cannot wear any leg armor besides custom built. They can add Endurance as a secondary stat when grappling targets and can attack targets grappled by them as a free action. They have a +1 to Dexterity, Strength, and Endurance.
+#Cobrakin: These unsettling snake people have+1t to all Social checks except for Threaten. They can make an Unarmed Combat attack with their fangs that have a DT equal to Endurance x2. When any HL is lost to the bite, the target must make a check equal to the user's Endurance and, upon a failure, is stunned for a number of rounds equal to 1/2 the user's Endurance score.
+#The Squall 
+
+Supposedly, this Avian race is descended from the "Golden Crow". The Golden Crow and his wife, the Phoenix Queen both deny this. Admittedly, they have some impressive traits which are more than made up for by their multiplicity of flaws. It's almost understandable that no God would want to claim them, but they soldier on nonetheless, their pretty little heads empty of the awareness that they are not, in fact, the coolest race on the planet  just because they fly and lay eggs. Perhaps there’s more to this race than meets the eye, however, as certain rumors surrounding these avian folk never quite peter out despite their general..them-ness.
+It's a Bird! It's a Plane… oh, it's a Bird!: Squall gain +1 Dexterity, Fly-skill Unlock, Fly and a speed equal to Speed. However, if they lose an amount of HL equal to their Durability in one hit, every action spent flying incurs one Exhaustion until fully healed.
+Eagle-Eyed And Bird-Brained: Squalls gain +1 Senses and have 3 Dice to all per rank of Sense but in return have Int capped at 1 at Character Creation and have doubled SP costs for both Intelligence and Intelligence-linked skills.
+Voracious And Fragile: All Squall have their t on all physical checks increase by an additional +1 per round when Staggered and must roll Serenity to not immediately devour any and all fish in sight, as well as being easily swayed by shiny objects. However, one can halve Serenity DCs and have them ignore the effects of Stagger for a number of rounds equal to Willpower by tempting a Squall with fish or shiny Objects.
+#Squats
+This race are the cousins of the Halfling, having a notably low population back on Terra. It seemed fated for them to fade into obscurity. Fate, however, had other plans. With humanity reaching out into the new frontier the hardy and reliable nature of the Squats raised them to a whole new level of prevalence as they often headed scouting parties and became renowned adventurers and craftsmen.
+
+Hardy: Squats have an extra 2 Durability and 3 HLs but their movement speed and dodge based Active Defense is halved.
+It’s In The Name: Squats are size category Small.
+Luck is for Fools and Cons: The user may choose to take half their dice in successes instead of actually rolling for any check. An additional +4 may then be added to the total successes a number of times a day equal to either the Squat's Int or Con, whichever is higher.
+#Squidhats
+
+These eccentric, friendly squids, known more properly as Dalmani, claim to originate from another dimension, and to have "Fully anchored themselves in this one to defeat The Great Enemy". When asked who the enemy is, they point to the non-sapient, mundane armor they wear. They are skilled diplomats and scholars, despite their vaguely unnatural minds, eccentric personalities, and squid-like bodies. They are well-liked by most due to their cheerful and friendly natures, though one who assumes that this makes them pushovers is in for a shock. Should a Dalmani be pushed to the point of anger, they will not forgive or forget slights directed at them or their friends.
+Semi-Nonstandard Existence: Due to their extra dimensional nature and mollusk-like physiology, when a Squidhat is in armor, they suffer no t penalties while dual wielding.
+Smart Little Squids: There are upsides and downsides to being an adorable cephalopod, like having a proportionally huge brain. One of them is that there is naturally less body to, well, body. As such, they possess a -1 to Strength, Dexterity, and Endurance but gain +1 in Intelligence, Willpower, and Charisma, and 50% increased efficiency when using Serenity in any context and half cost for increasing Willpower due to their strong minds and stronger souls. 
+Armored Cephalopods: While piloting a set of armor, they may use weapons and other similar equipment, and may add their Intelligence or Willpower to all physical checks as secondary stats.
+#Titans
+The biggest and bulkiest of the biological races, Titans aren't fast and aren't flexible, but some of them can bend steel with a punch before powers come into play. Titans have the following traits:
+
+Beefcake: Titans are Large in size, gain +2 Strength, +2 Durability, have Dexterity locked at 1 at CC and the prog needed to rank up Dexterity is doubled.
+Ungainly: Titans can't use one handed ranged weapons and can't dual wield.
+Long Strides: Titans can use Strength instead of Speed for movespeed.
+Tis A Flesh Wound: Titans ignore Damage recovery reduction and heal 1 HL a reset, regenerating limbs if destroyed
 #
