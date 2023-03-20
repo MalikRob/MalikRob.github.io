@@ -8,9 +8,7 @@ Variant Traits: Stingers/Webbing
 The choice of which of these to use depends on whether one is a Spider or Scorpion Arachnoid.
 Webbing: The Arachnoid can repair its carapace without tools or equipment, using Endurance as a Secondary stat for Crafting it. 
 Stinger: Stingers allow the arachnoid to add Endurance in place of Dexterity or Strength to Unarmed Combat rolls.
-#
-
-Baskers
+#Baskers
 These car-sized aquatic chelonians are oddly friendly creatures, who for some godforsaken reason have an equal proportion of Powered as Terrans. This would terrify literally everyone were they not essentially Martial Pacifists. (It still does, really, but Baskers pretend not to notice that.)
 
 Shellheads: Baskers have armor with the following stats: Prot 8, Rel 2, Infinite Res. This armor regenerates one Rel every 10-End rounds, but makes wielding equipment impossible.
