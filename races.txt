@@ -1,4 +1,5 @@
 Arachnoids
+
 Extra Limbs: Arachnoids have an extra set of both arms and eyes, allowing them to dual-wield two-handed weapons or quad-wield one-handed ones, though both make the penalty go from a halved dice pool to a quartered one.
 
 Carapace: Every Arachnoid possesses a natural carapace with Prot 5, Rel 4, Restriction ∞. This carapace naturally regenerates every reset regardless of all other damage so long as the limb it would be attached to still exists, but cannot be healed.
@@ -7,7 +8,6 @@ Webbing: The Arachnoid can repair its carapace without tools or equipment, using
 #
 Stinger: Stingers allow the arachnoid to add Endurance in place of Dexterity or Strength to Unarmed Combat rolls.
 #Baskers
-These car-sized aquatic chelonians are oddly friendly creatures, who for some godforsaken reason have an equal proportion of Powered as Terrans. This would terrify literally everyone were they not essentially Martial Pacifists. (It still does, really, but Baskers pretend not to notice that.)
 
 Shellheads: Baskers have armor with the following stats: Prot 8, Rel 2, Infinite Res. This armor regenerates one Rel every 10-End rounds, but makes wielding equipment impossible.
 
@@ -18,7 +18,9 @@ Spin It To Win It: Baskers gain access to the Unarmed Combat Specialty "Spinning
 #Goblins/Chaos Incarnates
 
 Malleable Form: Chaos Incarnates, despite looking superficially like normal humanoids, have a body that isn't really made up of much more than spite. This grants them the ability to, as a reaction, nullify the injury-promoting effects of called shots and do not take Injuries from Physical Attacks that deal Heavy or lower type damage due to their amorphous nature, though in exchange they have 0 Durability.
+
 Natural Mages: Chaos Incarnates have a Mana stat inherently, though it costs double the Prog to raise. Being a Mage and certain other powers, abilities and traits may remove this Malus.
+
 Elemental Solidity: Each Chaos Incarnate can, one per reset as a standard action, solidify into a form resembling one of the other Incarnates at the cost of their Malleable Form trait. While in this form, the Chaos Incarnate adds their Mana to all physical stats and gains access to the racial trait of the Incarnate they copied. This form costs 5 Mana to maintain for a round, increasing by five every round after the first. SL may be soul-burned to continue this transformation, but HL  cannot. While using this trait, they gain a base Durability of 2.
 #Chitterling
 These rodent-like humanoids, ranging from Squirrel to Mouse to Hedgehog to the rare Capybara and many other types all across the rodent kingdom, range aesthetically from "small human with animal traits'' to "anthropomorphic rodent". They claim to hail from an Ocean World of adventure and Piracy, and this is likely true, based on our observations. They arrived on Earth not long after Powers started seriously cropping up. They seem quite... familiar with dimensional travel, Void Rifts, Magic, and the like, so their familiarity with us was never weird, at least to them. 
