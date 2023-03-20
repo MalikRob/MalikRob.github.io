@@ -1,18 +1,18 @@
 Arachnoids
-There are two somewhat distinct varieties of Arachnoids; Spider-People and Scorpion-People.
-
 Extra Limbs: Arachnoids have an extra set of both arms and eyes, allowing them to dual-wield two-handed weapons or quad-wield one-handed ones, though both make the penalty go from a halved dice pool to a quartered one.
-Carapace: Every Arachnoid possesses a natural carapace with Prot 5, Rel 4, Restriction ∞. This carapace naturally regenerates every reset regardless of all other damage so long as the limb it would be attached to still exists, but cannot be healed.
 
-Variant Traits: Stingers/Webbing
-The choice of which of these to use depends on whether one is a Spider or Scorpion Arachnoid.
+Carapace: Every Arachnoid possesses a natural carapace with Prot 5, Rel 4, Restriction ∞. This carapace naturally regenerates every reset regardless of all other damage so long as the limb it would be attached to still exists, but cannot be healed.
+#
 Webbing: The Arachnoid can repair its carapace without tools or equipment, using Endurance as a Secondary stat for Crafting it. 
+#
 Stinger: Stingers allow the arachnoid to add Endurance in place of Dexterity or Strength to Unarmed Combat rolls.
 #Baskers
 These car-sized aquatic chelonians are oddly friendly creatures, who for some godforsaken reason have an equal proportion of Powered as Terrans. This would terrify literally everyone were they not essentially Martial Pacifists. (It still does, really, but Baskers pretend not to notice that.)
 
 Shellheads: Baskers have armor with the following stats: Prot 8, Rel 2, Infinite Res. This armor regenerates one Rel every 10-End rounds, but makes wielding equipment impossible.
+
 Squishy Turtles: Baskers, under their armor, have only Durability 1. Any power or ability that would increase it instead increases the Prot of their armor by the same amount.
+
 Pocket Monsters: Baskers may freely swap between Large and Tiny as a number of actions equal to their Speed.
 Spin It To Win It: Baskers gain access to the Unarmed Combat Specialty "Spinning", which allows them to use Speed in place of Strength as a Primary/Secondary Stat.
 #Goblins/Chaos Incarnates
