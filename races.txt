@@ -57,7 +57,7 @@ We'll Figure It Out: Progress gained from Training, Practice, and Exercise is do
 #Earth: +2 Strength
 Unbreaking Bulwark: They may increase the restriction of any armor worn by their Endurance score.
 #Fire: +2 Willpower
-#Light The Fires Of Your Soul: They may burn 1 SL to add Willpower to a single non-attack roll check once per round during combat.
+Light The Fires Of Your Soul: They may burn 1 SL to add Willpower to a single non-attack roll check once per round during combat.
 #Air: +2 Senses
 All Around You: They may add half their Senses dice to AD and all their Sense checks have -1t.
 #Water: +2 Endurance
