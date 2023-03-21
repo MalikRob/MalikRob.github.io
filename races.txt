@@ -64,7 +64,7 @@ All Around You: They may add half their Senses dice to AD and all their Sense ch
 Ripple and Converge:  They automatically downgrade the degree of all attacks made against them, and all light attacks are incapable of giving them physical Injuries.
 #Light: +2 Dexterity
 In A Flash: They may choose to teleport anywhere they can see within their normal movement range rather than move normally as an action, so long as both where they start and where they end is well lit.
-#Lightning:+1 Speed, +1 Will
+#Lightning: +1 Speed, +1 Will
 Split Second: With a focused surge of power, Children of Lightning may reroll any of their own checks as a reaction, this may be done an amount of times per reset equal to half of either their Speed or Willpower stat.
 #Force: +2 Charisma, a Child of Force may make a small explosion of force propelling them using charisma as a secondary stat when jumping. This ability may be used at almost any time so long as the user is prepared and has the actions to do so. 
 #Inari-Blessed Mitra, aka Kitsune
