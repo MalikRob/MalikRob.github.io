@@ -88,8 +88,6 @@ Tiny Geniuses: Menehunes are a race of incredibly smart dwarves with frog-like f
 Tiny People In General, Really: Menehunes are considered to be size category Tiny and gain 3 dice per point of Dexterity rather than 2.
 #Minotaurs
 
-Take the rage of Orks and the size of Titans, then toss it into one very angry, very powerful package. Behold, Minotaurs:
-
 Bloodbath: Minotaurs gain +1 Strength, Endurance, and Durability. Additionally, all Strife gained in combat is multiplied by 1.5.
 
 Seeing Red: Minos take a stacking 1 SL damage per round after staying in combat for a number of rounds equal to Willpower. This can be recovered with Serenity as if they were an Elementalist, this damage does not inflict injuries, but if they hit 0 they automatically enter the Berserk condition.
@@ -101,8 +99,6 @@ There's No Such Thing As A Bad Dog: Mitra are exceedingly loyal to those they ch
 
 Unconditional Love Is A Terrible Thing: If a Mitra or their pack is betrayed in a substantial manner by a pack member, the Mitra in question goes into a blood rage, seeking to rend the traitor limb from limb. In this state, they add Willpower as a Secondary dice to all rolls and ignore the Staggered condition for a number of rounds equal to their Willpower stat, doing everything in their power to put the traitor down and not listening to reason.
 #Necromen
-
-Those afflicted by the curse of Unmaking are known as Necromen or the Unmade, born from the folly of explorers taking what was not theirs, now many Necromen wander the world looking to cure the affliction, though many use the chance to revel in undeath.
 
 Accursed Rotted Thing: Necromen's undead vitality grants them +2 Strength and +2 Endurance as well as -1 Dexterity as well as complete immunity to all status effects or Injuries that rely on the target being alive. This also however renders them slow to change, doubling the Prog requirement to advance Strength and Endurance.
 
