@@ -404,11 +404,145 @@ function miscConditions() {
 }
 
 async function accessRaceDoc() {
-
-  const url1 = 'https://raw.githubusercontent.com/MalikRob/MalikRob.github.io/main/testload.txt'
+  const url1 =
+    "https://raw.githubusercontent.com/MalikRob/MalikRob.github.io/main/races.txt";
   const response = await fetch(url1);
   const data = await response.text();
-  console.log(data);
+
+  const myArray = data.split("#");
+
+  var c = $("#race").find(":selected").text();
+
+  $("#racial-trait-text-area").text(myArray[1]);
+
+  switch (c) {
+    case "Arachnoid: Spider":
+      $("#racial-trait-text-area").text(myArray[0] + "\n" + myArray[1]);
+      break;
+    case "Arachnoid: Scorpion":
+      $("#racial-trait-text-area").text(myArray[0] + "\n" + myArray[2]);
+      break;
+    case "Basker":
+      $("#racial-trait-text-area").text(myArray[3]);
+      break;
+    case "Goblins/Chaos Incarnates":
+      $("#racial-trait-text-area").text(myArray[4]);
+      break;
+
+    case "Chitterling":
+      $("#racial-trait-text-area").text(myArray[5]);
+      break;
+    case "Clones":
+      $("#racial-trait-text-area").text(myArray[6]);
+      break;
+    case "Dryads":
+      $("#racial-trait-text-area").text(myArray[7]);
+      break;
+    case "Halflings":
+      $("#racial-trait-text-area").text(myArray[8]);
+      break;
+
+    case "Hao":
+      $("#racial-trait-text-area").text(myArray[9]);
+      break;
+    case "Humans":
+      $("#racial-trait-text-area").text(myArray[10]);
+      break;
+    case "Earth Incarnate":
+      $("#racial-trait-text-area").text(myArray[11]);
+      break;
+    case "Fire Incarnate":
+      $("#racial-trait-text-area").text(myArray[12]);
+      break;
+
+    case "Air Incarnate":
+      $("#racial-trait-text-area").text(myArray[13]);
+      break;
+    case "Water Incarnate":
+      $("#racial-trait-text-area").text(myArray[14]);
+      break;
+    case "Light Incarnate":
+      $("#racial-trait-text-area").text(myArray[15]);
+      break;
+    case "Lightning Incarnate":
+      $("#racial-trait-text-area").text(myArray[16]);
+      break;
+
+    case "Force Incarnate":
+      $("#racial-trait-text-area").text(myArray[17]);
+      break;
+    case "Inari-Blessed Mitra, aka Kitsune":
+      $("#racial-trait-text-area").text(myArray[18]);
+      break;
+    case "Mahntral":
+      $("#racial-trait-text-area").text(myArray[19]);
+      break;
+    case "Menehune":
+      $("#racial-trait-text-area").text(myArray[20]);
+      break;
+
+    case "Minotaurs":
+      $("#racial-trait-text-area").text(myArray[21]);
+      break;
+    case "Mitra":
+      $("#racial-trait-text-area").text(myArray[22]);
+      break;
+    case "Necromen":
+      $("#racial-trait-text-area").text(myArray[23]);
+      break;
+    case "Orks":
+      $("#racial-trait-text-area").text(myArray[24]);
+      break;
+
+    case "Piscine: The Blubberkin":
+      $("#racial-trait-text-area").text(myArray[25] + "\n" + myArray[26]);
+      break;
+    case "Piscine: The Lurker":
+      $("#racial-trait-text-area").text(myArray[25] + "\n" + myArray[27]);
+      break;
+    case "Piscine: The Fragile Death":
+      $("#racial-trait-text-area").text(myArray[25] + "\n" + myArray[28]);
+      break;
+    case "Piscine: Leapers":
+      $("#racial-trait-text-area").text(myArray[25] + "\n" + myArray[29]);
+      break;
+
+    case "Piscine: The Undying":
+      $("#racial-trait-text-area").text(myArray[25] + "\n" + myArray[30]);
+      break;
+    case "Saurian: Scout Caste":
+      $("#racial-trait-text-area").text(myArray[31] + "\n" + myArray[34]);
+      break;
+    case "Saurian: Warrior Caste":
+      $("#racial-trait-text-area").text(myArray[32] + "\n" + myArray[34]);
+      break;
+    case "Saurian: Shaman Caste":
+      $("#racial-trait-text-area").text(myArray[33] + "\n" + myArray[34]);
+      break;
+
+    case "Serpentines: Lamia":
+      $("#racial-trait-text-area").text(myArray[35]);
+      break;
+    case "Serpentines: Cobrakin":
+      $("#racial-trait-text-area").text(myArray[36]);
+      break;
+    case "The Squall":
+      $("#racial-trait-text-area").text(myArray[37]);
+      break;
+    case "Squats":
+      $("#racial-trait-text-area").text(myArray[38]);
+      break;
+
+    case "Squidhats":
+      $("#racial-trait-text-area").text(myArray[39]);
+      break;
+    case "Titans":
+      $("#racial-trait-text-area").text(myArray[40]);
+      break;
+
+    default:
+      $("#racial-trait-text-area").text(" ");
+  }
 }
 
 //TRAITS
