@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="https://malikrob.github.io/pbcdesign.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://malikrob.github.io/pbcframe.js"></script>
+</head>
+
+<body>
+
+  <button type="button" id="copy">Copy</button>
+
+  <div id="H">
+    <h1>Nemesis 2.5e</h1>
+    <h2>Point Buy Calculator</h2>
+  </div>
+
+  <div id="Sub-Head">
+    <div class="minisection">
+      <h3 class="child">Star Rating: </h3>
+      <h3 class="child" id="starrating">0</h3>
+    </div>
+    <div class="minisection">
+      <p class="child">Total Prog Invested: </p>
+      <p class="child" id="total">0</p>
+    </div>
+  </div>
+
+  <div id="Stats">
+    <div class="minisection">
+      <div class="child">
+        <p class="stat" id="str">Strength</p>
+      </div>
+      <div class="child" id="strdiv" data-value="0">
+        <input type="text" id="strnum" class="statvalue" value="0" />
+        <button type="button" id="numUp1">↑</button>
+        <button type="button" id="numDown1">↓</button>
+      </div>
+    </div>
+    <div class="minisection">
+      <div class="child">
+        <p class="stat" id="spd">Speed</p>
+      </div>
+      <div class="child" id="spddiv" data-value="0">
+        <input type="text" id="spdnum" class="statvalue" value="0" />
+        <button type="button" id="numUp2">↑</button>
+        <button type="button" id="numDown2">↓</button>
+      </div>
+    </div>
+    <div class="minisection">
+      <div class="child">
+        <p class="stat" id="dex">Dexterity</p>
+      </div>
+      <div class="child"><input type="text" id="dexnum" class="statvalue" value="0" /></div>
+      <button type="button" id="numUp3">↑</button>
+      <button type="button" id="numDown3">↓</button>
+    </div>
+    <div class="minisection">
+      <div class="child">
+        <p class="stat" id="dur">Durability</p>
+      </div>
+      <div class="child"><input type="text" id="durnum" class="statvalue" value="0" /></div>
+      <button type="button" id="numUp4">↑</button>
+      <button type="button" id="numDown4">↓</button>
+    </div>
+    <div class="minisection">
+      <div class="child">
+        <p class="stat" id="end">Endurance</p>
+      </div>
+      <div class="child"><input type="text" id="endnum" class="statvalue" value="0" /></div>
+      <button type="button" id="numUp5">↑</button>
+      <button type="button" id="numDown5">↓</button>
+    </div>
+    <div class="minisection">
+      <div class="child">
+        <p class="stat" id="int">Intellect</p>
+      </div>
+      <div class="child"><input type="text" id="intnum" class="statvalue" value="0" /></div>
+      <button type="button" id="numUp6">↑</button>
+      <button type="button" id="numDown6">↓</button>
+    </div>
+    <div class="minisection">
+      <div class="child">
+        <p class="stat" id="wil">Willpower</p>
+      </div>
+      <div class="child"><input type="text" id="wilnum" class="statvalue" value="0" /></div>
+      <button type="button" id="numUp7">↑</button>
+      <button type="button" id="numDown7">↓</button>
+    </div>
+    <div class="minisection">
+      <div class="child">
+        <p class="stat" id="sen">Senses</p>
+      </div>
+      <div class="child"><input type="text" id="sennum" class="statvalue" value="0" /></div>
+      <button type="button" id="numUp8">↑</button>
+      <button type="button" id="numDown8">↓</button>
+    </div>
+    <div class="minisection">
+      <div class="child">
+        <p class="stat" id="cha">Charisma</p>
+      </div>
+      <div class="child"><input type="text" id="chanum" class="statvalue" value="0" /></div>
+      <button type="button" id="numUp9">↑</button>
+      <button type="button" id="numDown9">↓</button>
+    </div>
+  </div>
+
+  <div id="Skills">
+    <h3>Skills:</h3>
+    <div class="minisection">
+      <div class="child">
+        <input type="text" id="pro1" class="skillname" placeholder="Proficiency" />
+        <input type="text" id="prof1" class="skival" value="0" />
+        <button type="button" id="numUp10">↑</button>
+        <button type="button" id="numDown10">↓</button>
+        <input type="text" id="spe1" class="skillname" placeholder="Specialty" />
+        <input type="text" id="spec1" class="skival" value="0" />
+        <button type="button" id="numUp11">↑</button>
+        <button type="button" id="numDown11">↓</button>
+        <input type="text" id="fac1" class="skillname" placeholder="Facet" />
+        <input type="text" id="face1" class="skival" value="0" />
+        <button type="button" id="numUp12">↑</button>
+        <button type="button" id="numDown12">↓</button>
+      </div>
+    </div>
+
+    <div class="minisection">
+      <div class="child">
+        <input type="text" id="pro2" class="skillname" placeholder="Proficiency" />
+        <input type="text" id="prof2" class="skival" value="0" />
+        <button type="button" id="numUp13">↑</button>
+        <button type="button" id="numDown13">↓</button>
+        <input type="text" id="spe2" class="skillname" placeholder="Specialty" />
+        <input type="text" id="spec2" class="skival" value="0" />
+        <button type="button" id="numUp14">↑</button>
+        <button type="button" id="numDown14">↓</button>
+        <input type="text" id="fac2" class="skillname" placeholder="Facet" />
+        <input type="text" id="face2" class="skival" value="0" />
+        <button type="button" id="numUp15">↑</button>
+        <button type="button" id="numDown15">↓</button>
+      </div>
+    </div>
+
+    <div class="minisection">
+      <div class="child">
+        <input type="text" id="pro3" class="skillname" placeholder="Proficiency" />
+        <input type="text" id="prof3" class="skival" value="0" />
+        <button type="button" id="numUp16">↑</button>
+        <button type="button" id="numDown16">↓</button>
+        <input type="text" id="spe3" class="skillname" placeholder="Specialty" />
+        <input type="text" id="spec3" class="skival" value="0" />
+        <button type="button" id="numUp17">↑</button>
+        <button type="button" id="numDown17">↓</button>
+        <input type="text" id="fac3" class="skillname" placeholder="Facet" />
+        <input type="text" id="face3" class="skival" value="0" />
+        <button type="button" id="numUp18">↑</button>
+        <button type="button" id="numDown18">↓</button>
+      </div>
+    </div>
+
+    <div class="minisection">
+      <div class="child">
+        <input type="text" id="pro4" class="skillname" placeholder="Proficiency" />
+        <input type="text" id="prof4" class="skival" value="0" />
+        <button type="button" id="numUp19">↑</button>
+        <button type="button" id="numDown19">↓</button>
+        <input type="text" id="spe4" class="skillname" placeholder="Specialty" />
+        <input type="text" id="spec4" class="skival" value="0" />
+        <button type="button" id="numUp20">↑</button>
+        <button type="button" id="numDown20">↓</button>
+        <input type="text" id="fac4" class="skillname" placeholder="Facet" />
+        <input type="text" id="face4" class="skival" value="0" />
+        <button type="button" id="numUp21">↑</button>
+        <button type="button" id="numDown21">↓</button>
+      </div>
+    </div>
+
+    <div class="minisection">
+      <div class="child">
+        <input type="text" id="pro5" class="skillname" placeholder="Proficiency" />
+        <input type="text" id="prof5" class="skival" value="0" />
+        <button type="button" id="numUp22">↑</button>
+        <button type="button" id="numDown22">↓</button>
+        <input type="text" id="spe5" class="skillname" placeholder="Specialty" />
+        <input type="text" id="spec5" class="skival" value="0" />
+        <button type="button" id="numUp23">↑</button>
+        <button type="button" id="numDown23">↓</button>
+        <input type="text" id="fac5" class="skillname" placeholder="Facet" />
+        <input type="text" id="face5" class="skival" value="0" />
+        <button type="button" id="numUp24">↑</button>
+        <button type="button" id="numDown24">↓</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <h1>&#169; Copyright: Watchmaker</h1>
+  </footer>
+
+</body>
+
+</html>
