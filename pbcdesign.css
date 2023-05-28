@@ -1,0 +1,73 @@
+.minisection {
+  white-space: nowrap;
+  background-color: white;
+  padding: 5px;
+  border-style: dashed;
+  margin: 5px;
+}
+
+.child {
+  display: inline-block;
+}
+
+.statvalue {
+  width: 10px;
+}
+
+.skillname {
+  width: 70px;
+}
+
+.skival {
+  width: 10px;
+}
+
+body {
+  background-color: #0047ab;
+}
+#H {
+  background-color: #0047ab;
+  border: 10px solid silver;
+  border-radius: 12px;
+  padding: 5px;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+#Sub-Head {
+  background-color: #0047ab;
+  border: 10px solid silver;
+  border-radius: 12px;
+  padding: 5px;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+#Stats {
+  background-color: #0047ab;
+  border: 10px solid silver;
+  border-radius: 12px;
+  padding: 5px;
+  margin: 10px;
+}
+#Skills {
+  background-color: #0047ab;
+  border: 10px solid silver;
+  border-radius: 12px;
+  padding: 5px;
+  margin: 10px;
+}
+footer {
+  background-color: #0047ab;
+  border: 10px solid silver;
+  border-radius: 12px;
+  padding: 5px;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+#copy {
+  width: 50px;
+  height: 50px;
+} 
