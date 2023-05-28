@@ -828,15 +828,15 @@ window.onload = function () {
     msg += `${document.getElementById("starrating").innerText} Star\n`;
     msg += `${document.getElementById("total").innerText} Prog Invested\n`;
   
-    msg += `Strength: ${document.getElementById("strnum").innerText}\n`; // \n will signify a new line
-    msg += `Speed: ${document.getElementById("spdnum").innerText}\n`;
-    msg += `Dexterity: ${document.getElementById("dexnum").innerText}\n`;
-    msg += `Durability: ${document.getElementById("durnum").innerText}\n`;
-    msg += `Endurance: ${document.getElementById("endnum").innerText}\n`;
-    msg += `Senses: ${document.getElementById("sennum").innerText}\n`;
-    msg += `Intellect: ${document.getElementById("intnum").innerText}\n`;
-    msg += `Willpower: ${document.getElementById("wilnum").innerText}\n`;
-    msg += `Charisma: ${document.getElementById("chanum").innerText}\n`;
+    msg += `Strength: ${document.getElementById("strnum").value}\n`; // \n will signify a new line
+    msg += `Speed: ${document.getElementById("spdnum").value}\n`;
+    msg += `Dexterity: ${document.getElementById("dexnum").value}\n`;
+    msg += `Durability: ${document.getElementById("durnum").value}\n`;
+    msg += `Endurance: ${document.getElementById("endnum").value}\n`;
+    msg += `Senses: ${document.getElementById("sennum").value}\n`;
+    msg += `Intellect: ${document.getElementById("intnum").value}\n`;
+    msg += `Willpower: ${document.getElementById("wilnum").value}\n`;
+    msg += `Charisma: ${document.getElementById("chanum").value}\n`;
   
     msg += `\nSkills:\n`;
     msg += `${document.getElementById("pro1").value} ${document.getElementById("prof1").value} ${document.getElementById("spe1").value} ${document.getElementById("spec1").value} ${document.getElementById("fac1").value} ${document.getElementById("face1").value}\n`;
