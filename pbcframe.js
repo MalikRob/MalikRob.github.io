@@ -826,7 +826,7 @@ window.onload = function () {
   function copySheet() {
     let msg = "";
     msg += `${document.getElementById("starrating").innerText} Star\n`;
-    msg += `${document.getElementById("starrating").innerText} Prog Invested\n`;
+    msg += `${document.getElementById("total").innerText} Prog Invested\n`;
   
     msg += `Strength: ${document.getElementById("strnum").innerText}\n`; // \n will signify a new line
     msg += `Speed: ${document.getElementById("spdnum").innerText}\n`;
