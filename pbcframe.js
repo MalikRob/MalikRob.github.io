@@ -173,7 +173,6 @@ window.onload = function () {
   document.getElementById("numUp1").onclick = function () { raiseFunction('strnum') };
   document.getElementById("numUp2").onclick = function () { raiseFunction('spdnum') };
   document.getElementById("numUp3").onclick = function () { raiseFunction('dexnum') };
-  document.getElementById("numUp4").onclick = function () { raiseFunction('durnum') };
   document.getElementById("numUp5").onclick = function () { raiseFunction('endnum') };
   document.getElementById("numUp6").onclick = function () { raiseFunction('intnum') };
   document.getElementById("numUp7").onclick = function () { raiseFunction('wilnum') };
@@ -183,7 +182,6 @@ window.onload = function () {
   document.getElementById("numDown1").onclick = function () { lowerFunction('strnum') };
   document.getElementById("numDown2").onclick = function () { lowerFunction('spdnum') };
   document.getElementById("numDown3").onclick = function () { lowerFunction('dexnum') };
-  document.getElementById("numDown4").onclick = function () { lowerFunction('durnum') };
   document.getElementById("numDown5").onclick = function () { lowerFunction('endnum') };
   document.getElementById("numDown6").onclick = function () { lowerFunction('intnum') };
   document.getElementById("numDown7").onclick = function () { lowerFunction('wilnum') };
@@ -235,590 +233,202 @@ window.onload = function () {
 
   function raiseFunction(abc) {
 
+    var down = 0;
+
     switch (abc) {
-      case 'strnum': {
-        let down = numAlter(parseInt(document.getElementById("strnum").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("strnum").value = parseInt(document.getElementById("strnum").value) + 1;
-
-        let up = numAlter(parseInt(document.getElementById("strnum").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-
-        break;
-      }
-      case 'spdnum': {
-        let down = numAlter(parseInt(document.getElementById("spdnum").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("spdnum").value = parseInt(document.getElementById("spdnum").value) + 1;
-
-        let up = numAlter(parseInt(document.getElementById("spdnum").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-        break;
-      }
-      case 'dexnum': {
-        let down = numAlter(parseInt(document.getElementById("dexnum").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("dexnum").value = parseInt(document.getElementById("dexnum").value) + 1;
-
-        let up = numAlter(parseInt(document.getElementById("dexnum").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-        break;
-      }
-      case 'durnum': {
-        let down = numAlter(parseInt(document.getElementById("durnum").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("durnum").value = parseInt(document.getElementById("durnum").value) + 1;
-
-        let up = numAlter(parseInt(document.getElementById("durnum").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-        break;
-      }
-      case 'endnum': {
-        let down = numAlter(parseInt(document.getElementById("endnum").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("endnum").value = parseInt(document.getElementById("endnum").value) + 1;
-
-        let up = numAlter(parseInt(document.getElementById("endnum").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-        break;
-      }
-      case 'intnum': {
-        let down = numAlter(parseInt(document.getElementById("intnum").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("intnum").value = parseInt(document.getElementById("intnum").value) + 1;
-
-        let up = numAlter(parseInt(document.getElementById("intnum").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-        break;
-      }
-      case 'wilnum': {
-        let down = numAlter(parseInt(document.getElementById("wilnum").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("wilnum").value = parseInt(document.getElementById("wilnum").value) + 1;
-
-        let up = numAlter(parseInt(document.getElementById("wilnum").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-        break;
-      }
-      case 'sennum': {
-        let down = numAlter(parseInt(document.getElementById("sennum").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("sennum").value = parseInt(document.getElementById("sennum").value) + 1;
-
-        let up = numAlter(parseInt(document.getElementById("sennum").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-        break;
-      }
-      case 'chanum': {
-        let down = numAlter(parseInt(document.getElementById("chanum").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("chanum").value = parseInt(document.getElementById("chanum").value) + 1;
-
-        let up = numAlter(parseInt(document.getElementById("chanum").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-        break;
-      }
-      case 'prof1': {
-        let down = numAlter(parseInt(document.getElementById("prof1").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("prof1").value = parseInt(document.getElementById("prof1").value) + 1;
-
-        let up = numAlter(parseInt(document.getElementById("prof1").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-        break;
-      }
-      case 'prof2': {
-        let down = numAlter(parseInt(document.getElementById("prof2").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("prof2").value = parseInt(document.getElementById("prof2").value) + 1;
-
-        let up = numAlter(parseInt(document.getElementById("prof2").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-        break;
-      }
-      case 'prof3': {
-        let down = numAlter(parseInt(document.getElementById("prof3").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("prof3").value = parseInt(document.getElementById("prof3").value) + 1;
-
-        let up = numAlter(parseInt(document.getElementById("prof3").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-        break;
-      }
-      case 'prof4': {
-        let down = numAlter(parseInt(document.getElementById("prof4").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("prof4").value = parseInt(document.getElementById("prof4").value) + 1;
-
-        let up = numAlter(parseInt(document.getElementById("prof4").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-        break;
-      }
-      case 'prof5': {
-        let down = numAlter(parseInt(document.getElementById("prof5").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("prof5").value = parseInt(document.getElementById("prof5").value) + 1;
-
-        let up = numAlter(parseInt(document.getElementById("prof5").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-        break;
-      }
-      case 'spec1': {
-        let down = numAlter(parseInt(document.getElementById("spec1").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("spec1").value = parseInt(document.getElementById("spec1").value) + 1;
-
-        let up = numAlter(parseInt(document.getElementById("spec1").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-        break;
-      }
-      case 'spec2': {
-        let down = numAlter(parseInt(document.getElementById("spec2").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("spec2").value = parseInt(document.getElementById("spec2").value) + 1;
-
-        let up = numAlter(parseInt(document.getElementById("spec2").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-        break;
-      }
-      case 'spec3': {
-        let down = numAlter(parseInt(document.getElementById("spec3").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("spec3").value = parseInt(document.getElementById("spec3").value) + 1;
-
-        let up = numAlter(parseInt(document.getElementById("spec3").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-        break;
-      }
-      case 'spec4': {
-        let down = numAlter(parseInt(document.getElementById("spec4").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("spec4").value = parseInt(document.getElementById("spec4").value) + 1;
-
-        let up = numAlter(parseInt(document.getElementById("spec4").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-        break;
-      }
-      case 'spec5': {
-        let down = numAlter(parseInt(document.getElementById("spec5").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("spec5").value = parseInt(document.getElementById("spec5").value) + 1;
-
-        let up = numAlter(parseInt(document.getElementById("spec5").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-        break;
-      }
       case 'face1': {
-        let down = numAlterF(parseInt(document.getElementById("face1").value));
 
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
+        down = numAlterF(parseInt(document.getElementById(abc).value));
 
-        document.getElementById("face1").value = parseInt(document.getElementById("face1").value) + 1;
-
-        let up = numAlterF(parseInt(document.getElementById("face1").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
         break;
       }
+
       case 'face2': {
-        let down = numAlterF(parseInt(document.getElementById("face2").value));
 
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
+        down = numAlterF(parseInt(document.getElementById(abc).value));
 
-        document.getElementById("face2").value = parseInt(document.getElementById("face2").value) + 1;
-
-        let up = numAlterF(parseInt(document.getElementById("face2").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
         break;
       }
+
       case 'face3': {
-        let down = numAlterF(parseInt(document.getElementById("face3").value));
 
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
+        down = numAlterF(parseInt(document.getElementById(abc).value));
 
-        document.getElementById("face3").value = parseInt(document.getElementById("face3").value) + 1;
-
-        let up = numAlterF(parseInt(document.getElementById("face3").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
         break;
       }
+
       case 'face4': {
-        let down = numAlterF(parseInt(document.getElementById("face4").value));
 
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
+        down = numAlterF(parseInt(document.getElementById(abc).value));
 
-        document.getElementById("face4").value = parseInt(document.getElementById("face4").value) + 1;
-
-        let up = numAlterF(parseInt(document.getElementById("face4").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
         break;
       }
+
       case 'face5': {
-        let down = numAlterF(parseInt(document.getElementById("face5").value));
 
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
+        down = numAlterF(parseInt(document.getElementById(abc).value));
 
-        document.getElementById("face5").value = parseInt(document.getElementById("face5").value) + 1;
-
-        let up = numAlterF(parseInt(document.getElementById("face5").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
         break;
       }
 
       default:
+        down = numAlter(parseInt(document.getElementById(abc).value));
+        break;
+    }
 
+    document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
+
+    document.getElementById(abc).value = parseInt(document.getElementById(abc).value) + 1;
+
+    var up = 0;
+
+    switch (abc) {
+      case 'face1': {
+
+        up = numAlterF(parseInt(document.getElementById(abc).value));
+
+        break;
+      }
+
+      case 'face2': {
+
+        up = numAlterF(parseInt(document.getElementById(abc).value));
+
+        break;
+      }
+
+      case 'face3': {
+
+        up = numAlterF(parseInt(document.getElementById(abc).value));
+
+        break;
+      }
+
+      case 'face4': {
+
+        up = numAlterF(parseInt(document.getElementById(abc).value));
+
+        break;
+      }
+
+      case 'face5': {
+
+        up = numAlterF(parseInt(document.getElementById(abc).value));
+
+        break;
+      }
+
+      default:
+        up = numAlter(parseInt(document.getElementById(abc).value));
+        break;
+    }
+
+    document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
+
+    if (parseInt(document.getElementById(abc).value) < 0) {
+      document.getElementById(abc).value = 0;
     }
 
   }
 
   function lowerFunction(abc) {
 
+    var down = 0;
+
     switch (abc) {
-      case 'strnum': {
-        let down = numAlter(parseInt(document.getElementById("strnum").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("strnum").value = parseInt(document.getElementById("strnum").value) - 1;
-
-        let up = numAlter(parseInt(document.getElementById("strnum").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-        break;
-      }
-      case 'spdnum': {
-        let down = numAlter(parseInt(document.getElementById("spdnum").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("spdnum").value = parseInt(document.getElementById("spdnum").value) - 1;
-
-        let up = numAlter(parseInt(document.getElementById("spdnum").value));
-
-        break;
-      } document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-      case 'dexnum': {
-        let down = numAlter(parseInt(document.getElementById("dexnum").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("dexnum").value = parseInt(document.getElementById("dexnum").value) - 1;
-
-        let up = numAlter(parseInt(document.getElementById("dexnum").value));
-
-        break;
-      } document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-      case 'durnum': {
-        let down = numAlter(parseInt(document.getElementById("durnum").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("durnum").value = parseInt(document.getElementById("durnum").value) - 1;
-
-        let up = numAlter(parseInt(document.getElementById("durnum").value));
-
-        break;
-      } document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-      case 'endnum': {
-        let down = numAlter(parseInt(document.getElementById("endnum").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("endnum").value = parseInt(document.getElementById("endnum").value) - 1;
-
-        let up = numAlter(parseInt(document.getElementById("endnum").value));
-
-        break;
-      } document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-      case 'intnum': {
-        let down = numAlter(parseInt(document.getElementById("intnum").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("intnum").value = parseInt(document.getElementById("intnum").value) - 1;
-
-        let up = numAlter(parseInt(document.getElementById("intnum").value));
-
-        break;
-      } document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-      case 'wilnum': {
-        let down = numAlter(parseInt(document.getElementById("wilnum").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("wilnum").value = parseInt(document.getElementById("wilnum").value) - 1;
-
-        let up = numAlter(parseInt(document.getElementById("wilnum").value));
-
-        break;
-      } document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-      case 'sennum': {
-        let down = numAlter(parseInt(document.getElementById("sennum").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("sennum").value = parseInt(document.getElementById("sennum").value) - 1;
-
-        let up = numAlter(parseInt(document.getElementById("sennum").value));
-
-        break;
-      } document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-      case 'chanum': {
-        let down = numAlter(parseInt(document.getElementById("chanum").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("chanum").value = parseInt(document.getElementById("chanum").value) - 1;
-
-        let up = numAlter(parseInt(document.getElementById("chanum").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-      }
-      case 'prof1': {
-        let down = numAlter(parseInt(document.getElementById("prof1").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("prof1").value = parseInt(document.getElementById("prof1").value) - 1;
-
-        let up = numAlter(parseInt(document.getElementById("prof1").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-        break;
-      }
-      case 'prof2': {
-        let down = numAlter(parseInt(document.getElementById("prof2").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("prof2").value = parseInt(document.getElementById("prof2").value) - 1;
-
-        let up = numAlter(parseInt(document.getElementById("prof2").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-        break;
-      }
-      case 'prof3': {
-        let down = numAlter(parseInt(document.getElementById("prof3").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("prof3").value = parseInt(document.getElementById("prof3").value) - 1;
-
-        let up = numAlter(parseInt(document.getElementById("prof3").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-        break;
-      }
-      case 'prof4': {
-        let down = numAlter(parseInt(document.getElementById("prof4").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("prof4").value = parseInt(document.getElementById("prof4").value) - 1;
-
-        let up = numAlter(parseInt(document.getElementById("prof4").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-        break;
-      }
-      case 'prof5': {
-        let down = numAlter(parseInt(document.getElementById("prof5").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("prof5").value = parseInt(document.getElementById("prof5").value) - 1;
-
-        let up = numAlter(parseInt(document.getElementById("prof5").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-        break;
-      }
-      case 'spec1': {
-        let down = numAlter(parseInt(document.getElementById("spec1").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("spec1").value = parseInt(document.getElementById("spec1").value) - 1;
-
-        let up = numAlter(parseInt(document.getElementById("spec1").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-        break;
-      }
-      case 'spec2': {
-        let down = numAlter(parseInt(document.getElementById("spec2").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("spec2").value = parseInt(document.getElementById("spec2").value) - 1;
-
-        let up = numAlter(parseInt(document.getElementById("spec2").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-        break;
-      }
-      case 'spec3': {
-        let down = numAlter(parseInt(document.getElementById("spec3").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("spec3").value = parseInt(document.getElementById("spec3").value) - 1;
-
-        let up = numAlter(parseInt(document.getElementById("spec3").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-        break;
-      }
-      case 'spec4': {
-        let down = numAlter(parseInt(document.getElementById("spec4").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("spec4").value = parseInt(document.getElementById("spec4").value) - 1;
-
-        let up = numAlter(parseInt(document.getElementById("spec4").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-        break;
-      }
-      case 'spec5': {
-        let down = numAlter(parseInt(document.getElementById("spec5").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
-
-        document.getElementById("spec5").value = parseInt(document.getElementById("spec5").value) - 1;
-
-        let up = numAlter(parseInt(document.getElementById("spec5").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
-        break;
-      }
       case 'face1': {
-        let down = numAlterF(parseInt(document.getElementById("face1").value));
 
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
+        down = numAlterF(parseInt(document.getElementById(abc).value));
 
-        document.getElementById("face1").value = parseInt(document.getElementById("face1").value) - 1;
-
-        let up = numAlterF(parseInt(document.getElementById("face1").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
         break;
       }
+
       case 'face2': {
-        let down = numAlterF(parseInt(document.getElementById("face2").value));
 
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
+        down = numAlterF(parseInt(document.getElementById(abc).value));
 
-        document.getElementById("face2").value = parseInt(document.getElementById("face2").value) - 1;
-
-        let up = numAlterF(parseInt(document.getElementById("face2").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
         break;
       }
+
       case 'face3': {
-        let down = numAlterF(parseInt(document.getElementById("face3").value));
 
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
+        down = numAlterF(parseInt(document.getElementById(abc).value));
 
-        document.getElementById("face3").value = parseInt(document.getElementById("face3").value) - 1;
-
-        let up = numAlterF(parseInt(document.getElementById("face3").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
         break;
       }
+
       case 'face4': {
-        let down = numAlterF(parseInt(document.getElementById("face4").value));
 
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
+        down = numAlterF(parseInt(document.getElementById(abc).value));
 
-        document.getElementById("face4").value = parseInt(document.getElementById("face4").value) - 1;
-
-        let up = numAlterF(parseInt(document.getElementById("face4").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
         break;
       }
+
       case 'face5': {
-        let down = numAlterF(parseInt(document.getElementById("face5").value));
 
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
+        down = numAlterF(parseInt(document.getElementById(abc).value));
 
-        document.getElementById("face5").value = parseInt(document.getElementById("face5").value) - 1;
-
-        let up = numAlterF(parseInt(document.getElementById("face5").value));
-
-        document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
         break;
       }
 
       default:
-
+        down = numAlter(parseInt(document.getElementById(abc).value));
+        break;
     }
+
+    document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) - down;
+
+    document.getElementById(abc).value = parseInt(document.getElementById(abc).value) - 1;
+
+    var up = 0;
+
+    switch (abc) {
+      case 'face1': {
+
+        up = numAlterF(parseInt(document.getElementById(abc).value));
+
+        break;
+      }
+
+      case 'face2': {
+
+        up = numAlterF(parseInt(document.getElementById(abc).value));
+
+        break;
+      }
+
+      case 'face3': {
+
+        up = numAlterF(parseInt(document.getElementById(abc).value));
+
+        break;
+      }
+
+      case 'face4': {
+
+        up = numAlterF(parseInt(document.getElementById(abc).value));
+
+        break;
+      }
+
+      case 'face5': {
+
+        up = numAlterF(parseInt(document.getElementById(abc).value));
+
+        break;
+      }
+
+      default:
+        up = numAlter(parseInt(document.getElementById(abc).value));
+        break;
+    }
+
+    document.getElementById("total").innerText = parseInt(document.getElementById("total").innerText) + up;
+
+    if (parseInt(document.getElementById(abc).value) < 0) {
+      document.getElementById(abc).value = 0;
+    }
+
   }
 
   document.getElementById("copy").onclick = function () { copySheet() };
