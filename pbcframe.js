@@ -178,6 +178,8 @@ window.onload = function () {
   document.getElementById("numUp7").onclick = function () { raiseFunction('wilnum') };
   document.getElementById("numUp8").onclick = function () { raiseFunction('sennum') };
   document.getElementById("numUp9").onclick = function () { raiseFunction('chanum') };
+  document.getElementById("numUp25").onclick = function () { raiseFunction('connum') };
+  document.getElementById("numUp26").onclick = function () { raiseFunction('mignum') };
   // The Break Between Stat Arrows
   document.getElementById("numDown1").onclick = function () { lowerFunction('strnum') };
   document.getElementById("numDown2").onclick = function () { lowerFunction('spdnum') };
@@ -187,6 +189,8 @@ window.onload = function () {
   document.getElementById("numDown7").onclick = function () { lowerFunction('wilnum') };
   document.getElementById("numDown8").onclick = function () { lowerFunction('sennum') };
   document.getElementById("numDown9").onclick = function () { lowerFunction('chanum') };
+  document.getElementById("numDown25").onclick = function () { lowerFunction('connum') };
+  document.getElementById("numDown26").onclick = function () { lowerFunction('mignum') };
 
   // BIG
   // BREAK
@@ -271,6 +275,20 @@ window.onload = function () {
         break;
       }
 
+      case 'connum': {
+
+        down = numAlterF(parseInt(document.getElementById(abc).value));
+
+        break;
+      }
+
+      case 'mignum': {
+
+        down = numAlterF(parseInt(document.getElementById(abc).value));
+
+        break;
+      }
+
       default:
         down = numAlter(parseInt(document.getElementById(abc).value));
         break;
@@ -314,6 +332,22 @@ window.onload = function () {
       case 'face5': {
 
         up = numAlterF(parseInt(document.getElementById(abc).value));
+
+        break;
+      }
+
+      case 'connum': {
+
+        up = numAlterF(parseInt(document.getElementById(abc).value));
+
+        break;
+      }
+
+      case 'mignum': {
+
+        up = numAlterF(parseInt(document.getElementById(abc).value));
+
+        document.getElementById('durnum').value = parseInt(document.getElementById('durnum').value) + 1;
 
         break;
       }
@@ -371,6 +405,24 @@ window.onload = function () {
         break;
       }
 
+      case 'connum': {
+
+        down = numAlterF(parseInt(document.getElementById(abc).value));
+
+        break;
+      }
+
+      case 'mignum': {
+
+        down = numAlterF(parseInt(document.getElementById(abc).value));
+
+        if (parseInt(document.getElementById('durnum').value) > 2) {
+          document.getElementById('durnum').value = parseInt(document.getElementById('durnum').value) - 1;
+        }
+
+        break;
+      }
+
       default:
         down = numAlter(parseInt(document.getElementById(abc).value));
         break;
@@ -418,6 +470,20 @@ window.onload = function () {
         break;
       }
 
+      case 'connum': {
+
+        up = numAlterF(parseInt(document.getElementById(abc).value));
+
+        break;
+      }
+
+      case 'mignum': {
+
+        up = numAlterF(parseInt(document.getElementById(abc).value));
+
+        break;
+      }
+
       default:
         up = numAlter(parseInt(document.getElementById(abc).value));
         break;
@@ -437,7 +503,7 @@ window.onload = function () {
     let msg = "";
     msg += `${document.getElementById("starrating").innerText} Star\n`;
     msg += `${document.getElementById("total").innerText} Prog Invested\n`;
-  
+
     msg += `Strength: ${document.getElementById("strnum").value}\n`; // \n will signify a new line
     msg += `Speed: ${document.getElementById("spdnum").value}\n`;
     msg += `Dexterity: ${document.getElementById("dexnum").value}\n`;
@@ -447,14 +513,16 @@ window.onload = function () {
     msg += `Intellect: ${document.getElementById("intnum").value}\n`;
     msg += `Willpower: ${document.getElementById("wilnum").value}\n`;
     msg += `Charisma: ${document.getElementById("chanum").value}\n`;
-  
+    msg += `Conditional: ${document.getElementById("connum").value}\n`;
+    msg += `Might: ${document.getElementById("mignum").value}\n`;
+
     msg += `\nSkills:\n`;
     msg += `${document.getElementById("pro1").value} ${document.getElementById("prof1").value} ${document.getElementById("spe1").value} ${document.getElementById("spec1").value} ${document.getElementById("fac1").value} ${document.getElementById("face1").value}\n`;
     msg += `${document.getElementById("pro2").value} ${document.getElementById("prof2").value} ${document.getElementById("spe2").value} ${document.getElementById("spec2").value} ${document.getElementById("fac2").value} ${document.getElementById("face2").value}\n`;
     msg += `${document.getElementById("pro3").value} ${document.getElementById("prof3").value} ${document.getElementById("spe3").value} ${document.getElementById("spec3").value} ${document.getElementById("fac3").value} ${document.getElementById("face3").value}\n`;
     msg += `${document.getElementById("pro4").value} ${document.getElementById("prof4").value} ${document.getElementById("spe4").value} ${document.getElementById("spec4").value} ${document.getElementById("fac4").value} ${document.getElementById("face4").value}\n`;
-    msg += `${document.getElementById("pro5").value} ${document.getElementById("prof5").value} ${document.getElementById("spe5").value} ${document.getElementById("spec5").value} ${document.getElementById("fac5").value} ${document.getElementById("face5").value}\n`;
-  
+    msg += `${document.getElementById("pro5").value} ${document.getElementById("prof5").value} ${document.getElementById("spe5").value} ${document.getElementById("spec5").value} ${document.getElementById("fac5").value} ${document.getElementById("face5").value}`;
+
     navigator.clipboard.writeText(msg);
   }
 
