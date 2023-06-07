@@ -1,22 +1,32 @@
-/* The sidebar menu */
+/* The top menu */
 .sidenav {
-  width: 160px; /* Set the width of the sidebar */
+  width: 100%; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #D3D3D3; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-left: 20px;
+  background-color: #D3D3D3;
+  overflow-x: hidden; 
+  /* Disable horizontal scroll */
+  padding-top: 10px;
+  padding-bottom: 10px;
   border: 1px solid #D3D3D3;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
+.navcon {
+  display: inline-block;
+}
+
 .nottitle {
-  padding: 6px 8px 6px 16px;
+  padding-top: 50px;
+  font-size: 25px;
+}
+
+.primary {
+  padding-top: 50px;
+  font-size: 40px;
 }
 
 /* The navigation menu links */
@@ -33,36 +43,42 @@
   color: #ffffff;
 }
 
+body {
+  background-color: silver;
+}
+
 /* Style page content */
 .main {
-  margin-left: 170px; /* Same as the width of the sidebar */
+  margin-left: 50px;
   padding: 0px 10px;
 }
 
 .primedis {
   font-family: "Nova Square";
-  font-size: 100px;
 }
 .bronzetextcss {
   color: #808080;
-  font-size: 100px;
 }
 
 .bottom {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0px;
-  grid-auto-rows: minmax(100px, auto);
+  grid-auto-rows: minmax(100px, auto); */
+  position:fixed;
+  bottom: 0;
   border: 10px solid;
   border-color: black;
-  border-radius: 10px;
+  height: 20%;
+  width: 97%;
+  justify-content: center;
 }
 
 .bottom a {
   text-decoration: none;
   font-size: 20px;
   color: #111;
-  display: block;
+  /* display: block; */
 }
 
 .bottom a:hover {
@@ -73,54 +89,51 @@ ul {
   list-style: none;
 }
 
-.fl1 {
-  border-right: 10px solid;
+.fl {
+  display: inline-block;
+  width: 32.3%;
+  height: 20%;
+  position:fixed;
+  bottom: 0;
+  text-align: center;
+  background-clip: padding-box;
+  background-color: #D3D3D3;
+  border-right: 10px dashed;
   border-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.fl2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-right: 10px solid;
-  border-color: black;
-}
-.fl3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.fl1 h2, .fl2 h2, .fl3 h2 {
+#fl1 {
+  border-right: 10px dashed;
+  border-color: black;
+}
+
+#fl2{
+  border-right: 10px dashed;
+  border-color: black;
+  margin-left: 32.3%;
+}
+
+#fl3{
+  margin-left: 64.6%;
+}
+
+.fl h2 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .copyr {
   background-color: grey;
-  grid-column: 1/4;
-}
-.incopy {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: fit-content;
+  position:fixed;
+  bottom: 0;
+  width: 97%;
+  text-align: center;
 }
 
-#page-container {
+/* #page-container {
   position: relative;
   min-height: 100vh;
-}
-
-#content-wrap {
-  padding-bottom: 2.5rem;    /* Footer height */
-}
-
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 98%;
-}
+} */
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 300px) {
@@ -128,4 +141,3 @@ ul {
   .sidenav a {font-size: 18px;}
   .bottom {grid-template-columns: repeat(1, 1fr);}
 }
-
