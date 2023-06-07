@@ -119,49 +119,121 @@ window.onload = function () {
         b = 62;
         break;
       case 6:
-        a = 126;
+        b = 126;
         break;
       case 7:
-        a = 226;
+        b = 226;
         break;
       case 8:
-        a = 426;
+        b = 426;
         break;
       case 9:
-        a = 726;
+        b = 726;
         break;
       case 10:
-        a = 1126;
+        b = 1126;
         break;
       case 11:
-        a = 1626;
+        b = 1626;
         break;
       case 12:
-        a = 2226;
+        b = 2226;
         break;
       case 13:
-        a = 2926;
+        b = 2926;
         break;
       case 14:
-        a = 3726;
+        b = 3726;
         break;
       case 15:
-        a = 4626;
+        b = 4626;
         break;
       case 16:
-        a = 5626;
+        b = 5626;
         break;
       case 17:
-        a = 6726;
+        b = 6726;
         break;
       case 18:
-        a = 7926;
+        b = 7926;
         break;
       case 19:
-        a = 9226;
+        b = 9226;
         break;
       case 20:
-        a = 10626;
+        b = 10626;
+        break;
+      default:
+        b = 0;
+    }
+
+    return b;
+  }
+
+  function numAlterM(b) {
+    switch (b) {
+      case 0:
+        b = 0;
+        break;
+      case 1:
+        b = 3;
+        break;
+      case 2:
+        b = 9;
+        break;
+      case 3:
+        b = 21;
+        break;
+      case 4:
+        b = 45;
+        break;
+      case 5:
+        b = 93;
+        break;
+      case 6:
+        b = 189;
+        break;
+      case 7:
+        b = 339;
+        break;
+      case 8:
+        b = 639;
+        break;
+      case 9:
+        b = 1089;
+        break;
+      case 10:
+        b = 1689;
+        break;
+      case 11:
+        b = 2439;
+        break;
+      case 12:
+        b = 3339;
+        break;
+      case 13:
+        b = 4389;
+        break;
+      case 14:
+        b = 5589;
+        break;
+      case 15:
+        b = 6939;
+        break;
+      case 16:
+        b = 8439;
+        break;
+      case 17:
+        b = 10089;
+        break;
+      case 18:
+        b = 11889;
+        break;
+      case 19:
+        b = 13839;
+        break;
+      case 20:
+        b = 15939;
         break;
       default:
         b = 0;
@@ -284,7 +356,7 @@ window.onload = function () {
 
       case 'mignum': {
 
-        down = numAlterF(parseInt(document.getElementById(abc).value));
+        down = numAlterM(parseInt(document.getElementById(abc).value));
 
         break;
       }
@@ -345,7 +417,7 @@ window.onload = function () {
 
       case 'mignum': {
 
-        up = numAlterF(parseInt(document.getElementById(abc).value));
+        up = numAlterM(parseInt(document.getElementById(abc).value));
 
         document.getElementById('durnum').value = parseInt(document.getElementById('durnum').value) + 1;
 
@@ -414,7 +486,7 @@ window.onload = function () {
 
       case 'mignum': {
 
-        down = numAlterF(parseInt(document.getElementById(abc).value));
+        down = numAlterM(parseInt(document.getElementById(abc).value));
 
         if (parseInt(document.getElementById('durnum').value) > 2) {
           document.getElementById('durnum').value = parseInt(document.getElementById('durnum').value) - 1;
@@ -479,7 +551,7 @@ window.onload = function () {
 
       case 'mignum': {
 
-        up = numAlterF(parseInt(document.getElementById(abc).value));
+        up = numAlterM(parseInt(document.getElementById(abc).value));
 
         break;
       }
