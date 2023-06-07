@@ -96,6 +96,7 @@ ul {
   position:fixed;
   bottom: 0;
   text-align: center;
+  bottom: 12px;
   background-clip: padding-box;
   background-color: #D3D3D3;
 }
@@ -127,11 +128,6 @@ ul {
   width: 97%;
   text-align: center;
 }
-
-/* #page-container {
-  position: relative;
-  min-height: 100vh;
-} */
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 300px) {
