@@ -1,0 +1,79 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  background-color: #D3D3D3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.grid-container > header, footer {
+    background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+#header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#footer {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#NG-P {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#NG-C {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+button:active {
+  background-color: gold;
+}
+
+#MandT, #stats-people, #skills-people, #equipment, #traits-people, #racial-traits, #pl, #cpl {
+  text-align: left;
+  margin-left: 5%;
+}
+
+#CandT, #stats-creature, #skills-creature, #traits-creature {
+  text-align: left;
+  margin-left: 5%;
+}
+
+#lv, #str, #sta, #agi, #dur, #hea, #per, #int, #wil, #cha, #skillca-num, #numt{
+  margin-left: 10px;
+}
+
+#clv, #cstr, #csta, #cagi, #cdur, #chea, #cper, #cint, #cwil, #ccha, #cskillra-num, #cskillca-num, #cnumt{
+  margin-left: 10px;
+}
+
+.hope {
+  display: flex;
+}
+
+/* #stats-people {
+  margin: 0 auto;
+} */
+
+/* .str, .sta {
+  display: inline-block;
+} */
+
+/* .inline {
+  display: inline-block;
+} */
