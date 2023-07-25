@@ -509,7 +509,7 @@ function selectTraits() {
   t2 =
     "\n2- Shard Addict: The user is in possession of a number of Orange or Yellow Shards equal to double their Star Rating, which can be in any combination of sizes, maximum Small. Each time this ability is selected, the user may either double the amount of Shards they have or increase their color rarity by 1.\n";
   t3 =
-    "\n3- Gun Nut: The user increases their Star Rating for purposes of calculating a single Firearms Primary or Secondary Specialty skill by one, and may select Variant Firearms rather than standard ones if they so wish. This ability may be rolled multiple times, each time applying to a different Firearms Specialty.\n";
+    "\n3- Gun Nut: The user increases the tier of a single gun skill they have by one, maximum Expert. Each time this trait is taken, it can stack on a gun skill that hasn’t hit the cap or be put on another.\n";
   t4 =
     "\n4- Laser Loon: The user may gain access to energy weapons rather than a standard weapon.\n";
   t5 =
@@ -565,7 +565,7 @@ function selectTraits() {
   t29 =
     "\n29- Bestial Brute: The user gains access to Unnatural Weapon as a Secondary Skill and increases one of Strength, agiterity, Endurance, or Senses by one in terms of stat priority, to a maximum of Primary. This trait also increase Durability by a flat 2.\n";
   t30 =
-    "\n30- Golem: The user increases their Strength and Endurance Stat Priority by one each, or their effective Star Rating for calculating it by one each if they're already Primary Stats. This trait also increases Durability by 2 and turns it into Material Quality.\n";
+    "\n30- Golem: The user increases Strength & Health by 1, Durability is considered Tough(4 Passive Defense as their skin is stony), and Converts Health into Weight. Every time this trait is taken, the user’s PD is increased by 2, capping out at 8.\n";
 
   t31 =
     "\n31- My Specialty: The user gains access to a Facet related to one of their Primary or Secondary Skills with a number of Ranks equal to half their Star Rating.\n";
@@ -589,11 +589,11 @@ function selectTraits() {
     "\n40- Vat-Grown: The user's race is also considered Clone, adding a clone trait as well as granting them +1 to all physical stats except durability.\n";
 
   t41 =
-    "\n41- WHY DID IT HAVE TO BE FUCKING SUPERMAN? The user is a hybrid Sunblood Eternal, and cannot select any other power-based or magic-based Traits, but they have 200 Charge per Star Rating they possess and the normal Eternal milestones for reaching them.\n";
+    "\n41- WHY DID IT HAVE TO BE FUCKING SUPERMAN?: The user is distantly related to a Sunblooded Eternal. They have access to the Solar Battery Conditional (2 points per rank in the stat) and can only use it to spend points to increase a physical stat at a 1-to-1 ratio for a round at no action cost. Solar Battery is counted as an Unmodified stat.\n";
   t42 =
     "\n42- The Big Guns: The user's main weapon, should it be two-handed, counts as Large for purposes of dealing damage.\n";
   t43 =
-    "\n43- Oh Great, A Flesh Slime: The user is considered Uplifted, gaining their racial traits.\n";
+    "\n43- Oh Great, A Flesh Slime: The user is a flesh slime in the shape of a person. HP pool is calculated as if Health were an Elemental Conditional, they have fiat immunity to most purely kinetic injuries, and their Durability is set to 0.\n";
   t44 =
     "\n44- Born Lucky: The user has a pool of rerolls equal to their Star Rating, which they may use to force the reroll of any check at will. These rerolls restore upon impressive rolls or per Reset.\n";
   t45 = "\n45- Just That Good: The target has t5.\n";
