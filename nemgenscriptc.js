@@ -223,7 +223,7 @@ function selectCrTraits() {
   t6 =
     "\n6- As I Live And Breathe, The Wolverine: The user gains access to the Healing Factor stat as a Problem Stat, and each time they gain this ability they may raise it in Stat priority once, up to a Primary Stat.\n";
   t7 =
-    "\n7- Golem: The user increases their Strength and Endurance Stat Priority by one each, or their effective Star Rating for calculating it by one each if they're already Primary Stats. This trait also increases Durability by 2 and turns it into Material Quality.\n";
+    "\n7- Golem: The user increases Strength & Health by 1, Durability is considered Tough(4 Passive Defense as their skin is stony), and Converts Health into Weight. Every time this trait is taken, the user’s PD is increased by 2, capping out at 8.\n";
   t8 =
     "\n8- Sneaky Bugger: The user gains access to Stealth as a Secondary Skill if they did not already have it, and any attack from stealth halves the threshold for inflicting the Bleeding condition. This does not stack with called shots.\n";
   t9 =
