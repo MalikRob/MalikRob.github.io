@@ -653,9 +653,9 @@ function selectTraits() {
   t71 =
     "\n71- Why Are You A Criminal?: The nemesis has a potent and extremely profitable healing ability. They can heal themselves, or any one they are within physical contact with for 2d[StarRating] HLs or target a number of people within 50 feet equal to their Star Rating for half the healing dice.\n";
   t72 =
-    "\n72- Smoke Bomb!: The nemesis has access to a smoke-bomb in case they need to escape. Activating it is a main action that fills the area around them, Splash equal to x2 Star Rating, and gives them Full Cover and the ability to roll Stealth while in combat for 2d2 rounds.\n";
+    "\n72- Smoke Bomb!: The user has a smoke-bomb, that when activated as an action, automatically fills a circular, Short Range area with vision-obscuring smoke. This cover grants +4t to Perception checks and attacks dependent on seeing a target.\n";
   t73 =
-    "\n73- Neurotoxin: The nemesis has their melee weapons and ammo coated in a potent toxin. Upon dealing HL damage to a target, an Endurance or First Aid check must be made with a DC equal to x2 their Star Rating that stacks with each hit up to 4 times. This toxin causes 1dStarRating damage per round until the target hits -Max HL or they pass the DC. The DC goes down by 1 every time a target meets the resist DC.  (Trickster Specialty)\n";
+    "\n73- Neurotoxin: The nemesis has their melee weapons and ammo coated in a potent toxin. Upon dealing HP damage to a target, they must pass a DC 5 Middling Health check. Upon a failure, they will continuously gain +1t to all physical checks at the end of their turn. This toxin does not stack and has a duration of rounds equal to half the HP damage dealt with the inflicting strike, minimum 1. (Trickster Specialty)\n";
   t74 =
     "\n74- Feint: The Nemesis gains Sleight of Hand as a secondary skill and, upon a successful bluff against the target's Insight or Investigation, reduces the target's AD by an amount equal to their ranks in the skill. (Trickster Specialty)\n";
 
