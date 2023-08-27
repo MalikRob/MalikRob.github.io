@@ -632,7 +632,7 @@ function selectTraits() {
   t61 =
     "\n61- Breaking Bad: The user is equipped with a wild variety of drugs including some drugs that are only found on the black market. As a consequence of prolonged drug use and gene mods, the effects of the drugs are extended by an extra 1d3 rounds, negative effects are decreased by 25%, and the cooldown on usage is decreased by a round.\n";
   t62 =
-    "\n62- Riftwoken: The user has been touched by the void gaining the Voidwalkers Out of touch ability, a mana stat of 2 and gets 1d3 extra rounds of duration on shard usage, suffers 25% less from the consequences of shard abuse, and ????.\n";
+    "\n62- Rift-Attuned: The user has been touched by the void, gaining Mana as a Problem stat and a flat number of extra rounds on the duration of shard abilities equal to their Mana stat. Grant them 2 Miniscule sized shards of your choice to their Equipment.\n";
   t63 =
     "\n63 - Were-Something: This Nemesis is a Lycanthrope of some sort, moving their Primary stats up by 1 star and giving them doubled Durability against non Silvered/Holy attacks.\n";
   t64 =
@@ -640,7 +640,7 @@ function selectTraits() {
   t65 =
     "\n65- Shadowborn: The user can meld with shadows, increasing the T of all attacks made against them by 1 whenever they're covered in darkness, and gain access to the Disorientation conditional at half effectiveness with the ability to teleport to shadows they can see.\n";
   t66 =
-    "\n66- POCKET SAND: The Nemesis gains access to the Dirty Tricks variant style as a Primary Skill, moving their Convince and Lie skills to Secondary if they weren't already and to Primary if they were already Secondary.\n";
+    "\n66- POCKET SAND/RANDOM BULLSHIT: The user has -2t to the Sleight of Hand skill and upon a success against a target's Investigation/Insight, their next attack counts as a Blindside. Every time this trait is used on a target, pass or fail, the target gains -1t to their Insight/Investigation against the user for the duration of the encounter.\n";
   t67 =
     "\n67- Achilles' Heel: The user gains bonus Durability equal to Star Rating2 until a GM determined body part or object is damaged. This spot should be obvious, such as being a body wound, covered in more armor, and such, due to the part/item having completely no passive defense that cannot be remedied by any effects.\n";
   t68 =
