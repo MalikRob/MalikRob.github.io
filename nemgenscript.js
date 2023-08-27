@@ -970,8 +970,8 @@ function copyStats() {
   msg += `Charisma: ${document.getElementById("cha").innerText}\n`;
 
   msg += `\nSkills:\n`;
-  msg += `Skill Tiers - ${document.getElementById("skillca-num").innerText}\n`;
-  msg += `${document.getElementById("skills-text-area").value}`;
+  msg += `${document.getElementById("skillca-num").innerText}\n`;
+  msg += `${document.getElementById("skills-text-area").value}\n`;
   msg += `\nEquipment:\n`;
   msg += `${document.getElementById("equipment-text-area").value}\n`;
 
