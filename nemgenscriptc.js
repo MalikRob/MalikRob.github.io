@@ -208,7 +208,7 @@ function crmiscConditions() {
 
 //TRAITS
 function selectCrTraits() {
-  trait = Math.floor(Math.random() * 22) + 1;
+  trait = Math.floor(Math.random() * 23) - 1;
 
   t1 =
     "\n1- Destructive Blood: The user gains access to Innate Attack as a Tertiary Skill that scales off Endurance, and makes an Innate Attack with Medium DT 5+Star Rating any time they take slashing or piercing damage. This may be selected up to twice, the second time increasing the user's effective Star Rating for this attack by one.\n";
@@ -258,82 +258,38 @@ function selectCrTraits() {
   t23 =
     "\n23- Neurotoxin: The nemesis has their unnatural weapons and bodily fluids coated in a potent toxin. Upon dealing HL damage to a target, a Endurance or Medicine check must be made with a DC equal to 2 their Star Rating that stacks with each hit up to 4 times. This toxin causes 1dStarRating damage per round until the target hits -Max HL or they pass the DC. The DC goes down by 1 every time a target meets the resist DC.\n";
 
-  switch (trait) {
-    case 1:
-      document.querySelector("#crtrait-text-area").value += t1;
-      break;
-    case 2:
-      document.querySelector("#crtrait-text-area").value += t2;
-      break;
-    case 3:
-      document.querySelector("#crtrait-text-area").value += t3;
-      break;
-    case 4:
-      document.querySelector("#crtrait-text-area").value += t4;
-      break;
-    case 5:
-      document.querySelector("#crtrait-text-area").value += t5;
-      break;
-    case 6:
-      document.querySelector("#crtrait-text-area").value += t6;
-      break;
-    case 7:
-      document.querySelector("#crtrait-text-area").value += t7;
-      break;
-    case 8:
-      document.querySelector("#crtrait-text-area").value += t8;
-      break;
-    case 9:
-      document.querySelector("#crtrait-text-area").value += t9;
-      break;
-    case 10:
-      document.querySelector("#crtrait-text-area").value += t10;
-      break;
-    case 11:
-      document.querySelector("#crtrait-text-area").value += t11;
-      break;
-    case 12:
-      document.querySelector("#crtrait-text-area").value += t12;
-      break;
-    case 13:
-      document.querySelector("#crtrait-text-area").value += t13;
-      break;
-    case 14:
-      document.querySelector("#crtrait-text-area").value += t14;
-      break;
-    case 15:
-      document.querySelector("#crtrait-text-area").value += t15;
-      break;
-    case 16:
-      document.querySelector("#crtrait-text-area").value += t16;
-      break;
-    case 17:
-      document.querySelector("#crtrait-text-area").value += t17;
-      break;
-    case 18:
-      document.querySelector("#crtrait-text-area").value += t18;
-      break;
-    case 19:
-      document.querySelector("#crtrait-text-area").value += t19;
-      break;
-    case 20:
-      document.querySelector("#crtrait-text-area").value += t20;
-      break;
-    case 21:
-      document.querySelector("#crtrait-text-area").value += t21;
-      break;
-    case 22:
-      document.querySelector("#crtrait-text-area").value += t22;
-      break;
-    default:
-      document.querySelector("#crtrait-text-area").value += t23;
-  }
+  const traits = [];
+  traits[0] = t1;
+  traits[1] = t2;
+  traits[2] = t3;
+  traits[3] = t4;
+  traits[4] = t5;
+  traits[5] = t6;
+  traits[6] = t7;
+  traits[7] = t8;
+  traits[8] = t9;
+  traits[9] = t10;
+  traits[10] = t11;
+  traits[11] = t12;
+  traits[12] = t13;
+  traits[13] = t14;
+  traits[14] = t15;
+  traits[15] = t16;
+  traits[16] = t17;
+  traits[17] = t18;
+  traits[18] = t19;
+  traits[19] = t20;
+  traits[20] = t21;
+  traits[21] = t22;
+  traits[22] = t23;
+
+  document.querySelector("#crtrait-text-area").value += traits[trait];
 
 }
 
 //LEGENDARY TRAITS
 function selectCrLegendaryTraits() {
-  trait = Math.floor(Math.random() * 12) + 1;
+  trait = Math.floor(Math.random() * 13) - 1;
 
   t1 =
     "1. Time Lord: The user always goes first in Initiative, and may pause time for a number of rounds up to double their Star Rating as a free action. The cooldown is equal to the number of rounds in which they paused time. They may instead expend rounds to reverse the state of themselves or another target one round per two rounds of Time Stop expended, with the normal cooldown.\n";
@@ -360,43 +316,21 @@ function selectCrLegendaryTraits() {
   t12 =
     "12- Kaiju - The creature's stats remain the same but their size is increased to Titanic.\n";
 
-  switch (trait) {
-    case 1:
-      document.querySelector("#crtrait-text-area").value += t1;
-      break;
-    case 2:
-      document.querySelector("#crtrait-text-area").value += t2;
-      break;
-    case 3:
-      document.querySelector("#crtrait-text-area").value += t3;
-      break;
-    case 4:
-      document.querySelector("#crtrait-text-area").value += t4;
-      break;
-    case 5:
-      document.querySelector("#crtrait-text-area").value += t5;
-      break;
-    case 6:
-      document.querySelector("#crtrait-text-area").value += t6;
-      break;
-    case 7:
-      document.querySelector("#crtrait-text-area").value += t7;
-      break;
-    case 8:
-      document.querySelector("#crtrait-text-area").value += t8;
-      break;
-    case 9:
-      document.querySelector("#crtrait-text-area").value += t9;
-      break;
-    case 10:
-      document.querySelector("#crtrait-text-area").value += t10;
-      break;
-    case 11:
-      document.querySelector("#crtrait-text-area").value += t11;
-      break;
-    default:
-      document.querySelector("#crtrait-text-area").value += t12;
-  }
+  const traits = [];
+  traits[0] = t1;
+  traits[1] = t2;
+  traits[2] = t3;
+  traits[3] = t4;
+  traits[4] = t5;
+  traits[5] = t6;
+  traits[6] = t7;
+  traits[7] = t8;
+  traits[8] = t9;
+  traits[9] = t10;
+  traits[10] = t11;
+  traits[11] = t12;
+
+  document.querySelector("#crtrait-text-area").value += traits[trait];
 }
 
 function copycrPage() {
