@@ -502,7 +502,7 @@ async function accessRaceDoc() {
 
 //TRAITS
 function selectTraits() {
-  trait = Math.floor(Math.random() * 74) + 1;
+  trait = Math.floor(Math.random() * 75) - 1;
 
   t1 =
     "\n1- Posse: The user is surrounded with a number of Mercenaries two Star Ratings below them equal to their own Star Rating, with a minimum Star Rating of 1. This may be rolled up to three times, each time after the first increasing the Star Rating of the posse by one.\n";
@@ -659,234 +659,88 @@ function selectTraits() {
   t74 =
     "\n74- Feint: The Nemesis gains Sleight of Hand as a secondary skill and, upon a successful bluff against the target's Insight or Investigation, reduces the target's AD by an amount equal to their ranks in the skill. (Trickster Specialty)\n";
 
-  switch (trait) {
-    case 1:
-      document.querySelector("#trait-text-area").value += t1;
-      break;
-    case 2:
-      document.querySelector("#trait-text-area").value += t2;
-      break;
-    case 3:
-      document.querySelector("#trait-text-area").value += t3;
-      break;
-    case 4:
-      document.querySelector("#trait-text-area").value += t4;
-      break;
-    case 5:
-      document.querySelector("#trait-text-area").value += t5;
-      break;
-    case 6:
-      document.querySelector("#trait-text-area").value += t6;
-      break;
-    case 7:
-      document.querySelector("#trait-text-area").value += t7;
-      break;
-    case 8:
-      document.querySelector("#trait-text-area").value += t8;
-      break;
-    case 9:
-      document.querySelector("#trait-text-area").value += t9;
-      break;
-    case 10:
-      document.querySelector("#trait-text-area").value += t10;
-      break;
-    case 11:
-      document.querySelector("#trait-text-area").value += t11;
-      break;
-    case 12:
-      document.querySelector("#trait-text-area").value += t12;
-      break;
-    case 13:
-      document.querySelector("#trait-text-area").value += t13;
-      break;
-    case 14:
-      document.querySelector("#trait-text-area").value += t14;
-      break;
-    case 15:
-      document.querySelector("#trait-text-area").value += t15;
-      break;
-    case 16:
-      document.querySelector("#trait-text-area").value += t16;
-      break;
-    case 17:
-      document.querySelector("#trait-text-area").value += t17;
-      break;
-    case 18:
-      document.querySelector("#trait-text-area").value += t18;
-      break;
-    case 19:
-      document.querySelector("#trait-text-area").value += t19;
-      break;
-    case 20:
-      document.querySelector("#trait-text-area").value += t20;
-      break;
-    case 21:
-      document.querySelector("#trait-text-area").value += t21;
-      break;
-    case 22:
-      document.querySelector("#trait-text-area").value += t22;
-      break;
-    case 23:
-      document.querySelector("#trait-text-area").value += t23;
-      break;
-    case 24:
-      document.querySelector("#trait-text-area").value += t24;
-      break;
-    case 25:
-      document.querySelector("#trait-text-area").value += t25;
-      break;
-    case 26:
-      document.querySelector("#trait-text-area").value += t26;
-      break;
-    case 27:
-      document.querySelector("#trait-text-area").value += t27;
-      break;
-    case 28:
-      document.querySelector("#trait-text-area").value += t28;
-      break;
-    case 29:
-      document.querySelector("#trait-text-area").value += t29;
-      break;
-    case 30:
-      document.querySelector("#trait-text-area").value += t30;
-      break;
-    case 31:
-      document.querySelector("#trait-text-area").value += t31;
-      break;
-    case 32:
-      document.querySelector("#trait-text-area").value += t32;
-      break;
-    case 33:
-      document.querySelector("#trait-text-area").value += t33;
-      break;
-    case 34:
-      document.querySelector("#trait-text-area").value += t34;
-      break;
-    case 35:
-      document.querySelector("#trait-text-area").value += t35;
-      break;
-    case 36:
-      document.querySelector("#trait-text-area").value += t36;
-      break;
-    case 37:
-      document.querySelector("#trait-text-area").value += t37;
-      break;
-    case 38:
-      document.querySelector("#trait-text-area").value += t38;
-      break;
-    case 39:
-      document.querySelector("#trait-text-area").value += t39;
-      break;
-    case 40:
-      document.querySelector("#trait-text-area").value += t40;
-      break;
-    case 41:
-      document.querySelector("#trait-text-area").value += t41;
-      break;
-    case 42:
-      document.querySelector("#trait-text-area").value += t42;
-      break;
-    case 43:
-      document.querySelector("#trait-text-area").value += t43;
-      break;
-    case 44:
-      document.querySelector("#trait-text-area").value += t44;
-      break;
-    case 45:
-      document.querySelector("#trait-text-area").value += t45;
-      break;
-    case 46:
-      document.querySelector("#trait-text-area").value += t46;
-      break;
-    case 47:
-      document.querySelector("#trait-text-area").value += t47;
-      break;
-    case 48:
-      document.querySelector("#trait-text-area").value += t48;
-      break;
-    case 49:
-      document.querySelector("#trait-text-area").value += t49;
-      break;
-    case 50:
-      document.querySelector("#trait-text-area").value += t50;
-      break;
-    case 51:
-      document.querySelector("#trait-text-area").value += t51;
-      break;
-    case 52:
-      document.querySelector("#trait-text-area").value += t52;
-      break;
-    case 53:
-      document.querySelector("#trait-text-area").value += t53;
-      break;
-    case 54:
-      document.querySelector("#trait-text-area").value += t54;
-      break;
-    case 55:
-      document.querySelector("#trait-text-area").value += t55;
-      break;
-    case 56:
-      document.querySelector("#trait-text-area").value += t56;
-      break;
-    case 57:
-      document.querySelector("#trait-text-area").value += t57;
-      break;
-    case 58:
-      document.querySelector("#trait-text-area").value += t58;
-      break;
-    case 59:
-      document.querySelector("#trait-text-area").value += t59;
-      break;
-    case 60:
-      document.querySelector("#trait-text-area").value += t60;
-      break;
-    case 61:
-      document.querySelector("#trait-text-area").value += t61;
-      break;
-    case 62:
-      document.querySelector("#trait-text-area").value += t62;
-      break;
-    case 63:
-      document.querySelector("#trait-text-area").value += t63;
-      break;
-    case 64:
-      document.querySelector("#trait-text-area").value += t64;
-      break;
-    case 65:
-      document.querySelector("#trait-text-area").value += t65;
-      break;
-    case 66:
-      document.querySelector("#trait-text-area").value += t66;
-      break;
-    case 67:
-      document.querySelector("#trait-text-area").value += t67;
-      break;
-    case 68:
-      document.querySelector("#trait-text-area").value += t68;
-      break;
-    case 69:
-      document.querySelector("#trait-text-area").value += t69;
-      break;
-    case 70:
-      document.querySelector("#trait-text-area").value += t67;
-      break;
-    case 71:
-      document.querySelector("#trait-text-area").value += t68;
-      break;
-    case 72:
-      document.querySelector("#trait-text-area").value += t69;
-      break;
-    case 73:
-      document.querySelector("#trait-text-area").value += t69;
-      break;
-    default:
-      document.querySelector("#trait-text-area").value += t74;
-  }
+  const traits = [];
+  traits[0] = t1;
+  traits[1] = t2;
+  traits[2] = t3;
+  traits[3] = t4;
+  traits[4] = t5;
+  traits[5] = t6;
+  traits[6] = t7;
+  traits[7] = t8;
+  traits[8] = t9;
+  traits[9] = t10;
+  traits[10] = t11;
+  traits[11] = t12;
+  traits[12] = t13;
+  traits[13] = t14;
+  traits[14] = t15;
+  traits[15] = t16;
+  traits[16] = t17;
+  traits[17] = t18;
+  traits[18] = t19;
+  traits[19] = t20;
+  traits[20] = t21;
+  traits[21] = t22;
+  traits[22] = t23;
+  traits[23] = t24;
+  traits[24] = t25;
+  traits[25] = t26;
+  traits[26] = t27;
+  traits[27] = t28;
+  traits[28] = t29;
+  traits[29] = t30;
+  traits[30] = t31;
+  traits[31] = t32;
+  traits[32] = t33;
+  traits[33] = t34;
+  traits[34] = t35;
+  traits[35] = t36;
+  traits[36] = t37;
+  traits[37] = t38;
+  traits[38] = t39;
+  traits[39] = t40;
+  traits[40] = t41;
+  traits[41] = t42;
+  traits[42] = t43;
+  traits[43] = t44;
+  traits[44] = t45;
+  traits[45] = t46;
+  traits[46] = t47;
+  traits[47] = t48;
+  traits[48] = t49;
+  traits[49] = t50;
+  traits[50] = t51;
+  traits[51] = t52;
+  traits[52] = t53;
+  traits[53] = t54;
+  traits[54] = t55;
+  traits[55] = t56;
+  traits[56] = t57;
+  traits[57] = t58;
+  traits[58] = t59;
+  traits[59] = t60;
+  traits[60] = t61;
+  traits[61] = t62;
+  traits[62] = t63;
+  traits[63] = t64;
+  traits[64] = t65;
+  traits[65] = t66;
+  traits[66] = t67;
+  traits[67] = t68;
+  traits[68] = t69;
+  traits[69] = t70;
+  traits[70] = t71;
+  traits[71] = t72;
+  traits[72] = t73;
+  traits[73] = t74;
+
+  document.querySelector("#trait-text-area").value += traits[trait];
 }
 
 //LEGENDARY TRAITS
 function selectLegendaryTraits() {
-  trait = Math.floor(Math.random() * 12) + 1;
+  trait = Math.floor(Math.random() * 13) - 1;
 
   t1 =
     "\n1. Time Lord: The user always goes first in Initiative, and may pause time for a number of rounds up to double their Star Rating as a free action. The cooldown is equal to the number of rounds in which they paused time. They may instead expend rounds to reverse the state of themselves or another target one round per two rounds of Time Stop expended, with the normal cooldown.\n";
@@ -913,43 +767,21 @@ function selectLegendaryTraits() {
   t12 =
     "\n12. Elastic Man: The nemesis' body is rubbery in nature, giving them equalized Durability across their body and Reach to all melee attacks equal to their agiterity. They are immune to physical damage but being hit by ice attacks removes all the benefits of this trait and halves their Durability for 10 - Star Rating rounds.\n";
 
-  switch (trait) {
-    case 1:
-      document.querySelector("#trait-text-area").value += t1;
-      break;
-    case 2:
-      document.querySelector("#trait-text-area").value += t2;
-      break;
-    case 3:
-      document.querySelector("#trait-text-area").value += t3;
-      break;
-    case 4:
-      document.querySelector("#trait-text-area").value += t4;
-      break;
-    case 5:
-      document.querySelector("#trait-text-area").value += t5;
-      break;
-    case 6:
-      document.querySelector("#trait-text-area").value += t6;
-      break;
-    case 7:
-      document.querySelector("#trait-text-area").value += t7;
-      break;
-    case 8:
-      document.querySelector("#trait-text-area").value += t8;
-      break;
-    case 9:
-      document.querySelector("#trait-text-area").value += t9;
-      break;
-    case 10:
-      document.querySelector("#trait-text-area").value += t10;
-      break;
-    case 11:
-      document.querySelector("#trait-text-area").value += t11;
-      break;
-    default:
-      document.querySelector("#trait-text-area").value += t12;
-  }
+  const traits = [];
+  traits[0] = t1;
+  traits[1] = t2;
+  traits[2] = t3;
+  traits[3] = t4;
+  traits[4] = t5;
+  traits[5] = t6;
+  traits[6] = t7;
+  traits[7] = t8;
+  traits[8] = t9;
+  traits[9] = t10;
+  traits[10] = t11;
+  traits[11] = t12;
+
+  document.querySelector("#trait-text-area").value += traits[trait];
 }
 
 function copyStats() {
