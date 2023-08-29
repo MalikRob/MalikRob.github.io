@@ -657,7 +657,7 @@ function selectTraits() {
   t73 =
     "\n73- Neurotoxin: The nemesis has their melee weapons and ammo coated in a potent toxin. Upon dealing HP damage to a target, they must pass a DC 5 Middling Health check. Upon a failure, they will continuously gain +1t to all physical checks at the end of their turn. This toxin does not stack and has a duration of rounds equal to half the HP damage dealt with the inflicting strike, minimum 1. (Trickster Specialty)\n";
   t74 =
-    "\n74- Feint: The Nemesis gains Sleight of Hand as a secondary skill and, upon a successful bluff against the target's Insight or Investigation, reduces the target's AD by an amount equal to their ranks in the skill. (Trickster Specialty)\n";
+    "\n74- Perfect Feint: The has exceptional mastery over the Sleight of Hand skill, having a base -2t to all checks with it. Additionally, when used to Feint someone (a Tricky check), they completely nullify the ability to parry their next strike against them. Every time this trait is used on a target, pass or fail, the target gains -1t to their Insight/Investigation against the user for the duration of the encounter. (Trickster Specialty)\n";
 
   const traits = [];
   traits[0] = t1;
