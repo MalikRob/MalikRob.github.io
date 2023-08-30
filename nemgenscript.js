@@ -591,7 +591,7 @@ function selectTraits() {
   trait = Math.floor(Math.random() * 75) - 1;
 
   t1 =
-    "\n1- Posse: The user is surrounded with a number of Mercenaries two Star Ratings below them equal to their own Star Rating, with a minimum Star Rating of 1. This may be rolled up to three times, each time after the first increasing the Star Rating of the posse by one.\n";
+    "\n1- Posse: The user is surrounded with a number of people two Star Ratings below them equal to their own Star Rating, with a minimum Star Rating of 1. This may be rolled up to three times, each time after the first increasing the Star Rating of the posse by one. The Posse is also one Category of Character tier lower than them, minimum Mook.\n";
   t2 =
     "\n2- Shard Addict: The user is in possession of a number of Orange or Yellow Shards equal to double their Star Rating, which can be in any combination of sizes, maximum Small. Each time this ability is selected, the user may either double the amount of Shards they have or increase their color rarity by 1.\n";
   t3 =
@@ -744,6 +744,8 @@ function selectTraits() {
     "\n73- Neurotoxin: The nemesis has their melee weapons and ammo coated in a potent toxin. Upon dealing HP damage to a target, they must pass a DC 5 Middling Health check. Upon a failure, they will continuously gain +1t to all physical checks at the end of their turn. This toxin does not stack and has a duration of rounds equal to half the HP damage dealt with the inflicting strike, minimum 1. (Trickster Specialty)\n";
   t74 =
     "\n74- Perfect Feint: The has exceptional mastery over the Sleight of Hand skill, having a base -2t to all checks with it. Additionally, when used to Feint someone (a Tricky check), they completely nullify the ability to parry their next strike against them. Every time this trait is used on a target, pass or fail, the target gains -1t to their Insight/Investigation against the user for the duration of the encounter. (Trickster Specialty)\n";
+  t75 =
+    "\n75- The Power of Friendship: This Nemesis is almost always found with another that also possesses this trait, and while both of them are in the same combat they have -2t to all offensive and defensive checks, as well as any other checks that would relate to teamwork. If one of them is Taken Out, the other one has their explosion threshold reduced by 2 until the end of combat. [This counts as 2 Traits instead of 1.]\n";
 
   const traits = [];
   traits[0] = t1;
@@ -820,6 +822,7 @@ function selectTraits() {
   traits[71] = t72;
   traits[72] = t73;
   traits[73] = t74;
+  traits[74] = t75;
 
   document.querySelector("#trait-text-area").value += traits[trait];
 }
