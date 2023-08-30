@@ -1,3 +1,36 @@
+//****************************************************
+// File: nemgenscript.js
+//
+// Purpose: Handled the creation of people Nemesis sheets.
+//
+// Written By: Blonk
+//
+// Compiler: Visual Studio Code
+//
+// Update Information
+// ------------------
+//
+// Name: Blonk
+// Date: 8/29/2023
+// Description: Added comments and updated copyStats
+// function.
+//
+//****************************************************
+
+//****************************************************
+// Function: archetype
+//
+// Purpose: Load the relevant skills, equipment, and base line stats of a given archetype
+// when the user clicks one from the dropdown menu.
+//
+// Update Information
+// ------------------
+//
+// Name: Blonk
+// Date: 8/29/2023
+// Description: Add Comment
+//
+//****************************************************
 $(document).ready(function () {
   $("#archetype").on("change", function () {
     var a = this.value;
@@ -122,6 +155,19 @@ $(document).ready(function () {
     }
   });
 
+//****************************************************
+// Function: stars
+//
+// Purpose: Increase and decrease stats in accordance to the currently selected stat priority.
+//
+// Update Information
+// ------------------
+//
+// Name: Blonk
+// Date: 8/29/2023
+// Description: Add Comment
+//
+//****************************************************
   $("#stars").on("change", function () {
     var a = this.value;
 
@@ -325,6 +371,20 @@ $(document).ready(function () {
   });
 });
 
+//****************************************************
+// Function: miscConditions
+//
+// Purpose: Raises or lowers number of allowed traits and Power Level when Star Rating
+// is selected from it's dropdown menu.
+//
+// Update Information
+// ------------------
+//
+// Name: Blonk
+// Date: 8/29/2023
+// Description: Add Comment
+//
+//****************************************************
 function miscConditions() {
   switch (document.querySelector("#stars").value) {
     case "1":
@@ -356,6 +416,19 @@ function miscConditions() {
   }
 }
 
+//****************************************************
+// Function: accessRaceDoc
+//
+// Purpose: To access and extract racial trait descriptions.
+//
+// Update Information
+// ------------------
+//
+// Name: Blonk
+// Date: 8/29/2023
+// Description: Add Comment
+//
+//****************************************************
 async function accessRaceDoc() {
   const url1 =
     "https://raw.githubusercontent.com/MalikRob/MalikRob.github.io/main/races.txt";
@@ -500,7 +573,20 @@ async function accessRaceDoc() {
   }
 }
 
-//TRAITS
+//****************************************************
+// Function: selectTraits
+//
+// Purpose: To roll a random number, load each trait into a single variable
+// and then load that variable into a static array. A trait is outputed depending on the number rolled.
+//
+// Update Information
+// ------------------
+//
+// Name: Blonk
+// Date: 8/29/2023
+// Description: Add Comment
+//
+//****************************************************
 function selectTraits() {
   trait = Math.floor(Math.random() * 75) - 1;
 
@@ -738,7 +824,20 @@ function selectTraits() {
   document.querySelector("#trait-text-area").value += traits[trait];
 }
 
-//LEGENDARY TRAITS
+//****************************************************
+// Function: selectLegendaryTraits
+//
+// Purpose: To roll a random number, load each trait into a single variable
+// and then load that variable into a static array. A trait is outputed depending on the number rolled.
+//
+// Update Information
+// ------------------
+//
+// Name: Blonk
+// Date: 8/29/2023
+// Description: Add Comment
+//
+//****************************************************
 function selectLegendaryTraits() {
   trait = Math.floor(Math.random() * 13) - 1;
 
@@ -784,6 +883,20 @@ function selectLegendaryTraits() {
   document.querySelector("#trait-text-area").value += traits[trait];
 }
 
+//****************************************************
+// Function: copyStats
+//
+// Purpose: Copy Star Rating, Race, Power Level, 
+// Archetype, Stats, and every text field upon button press.
+//
+// Update Information
+// ------------------
+//
+// Name: Blonk
+// Date: 8/29/2023
+// Description: Add Comment & Included Racial Traits Section
+//
+//****************************************************
 function copyStats() {
   let msg = "";
   msg += `${document.getElementById("stars").value} Star\n`;
@@ -791,7 +904,7 @@ function copyStats() {
   msg += `Power Level: ${document.getElementById("lv").innerText}\n`;
   msg += `${document.getElementById("archetype").value}\n\n`;
 
-  msg += `Strength: ${document.getElementById("str").innerText}\n`; // \n will signify a new line
+  msg += `Strength: ${document.getElementById("str").innerText}\n`;
   msg += `Stamina: ${document.getElementById("sta").innerText}\n`;
   msg += `Agility: ${document.getElementById("agi").innerText}\n`;
   msg += `Durability: ${document.getElementById("dur").innerText}\n`;
@@ -804,11 +917,16 @@ function copyStats() {
   msg += `\nSkills:\n`;
   msg += `${document.getElementById("skillca-num").innerText}\n`;
   msg += `${document.getElementById("skills-text-area").value}\n`;
+
   msg += `\nEquipment:\n`;
   msg += `${document.getElementById("equipment-text-area").value}\n`;
 
-  msg += `Abilities:\n`;
-  msg += `${document.getElementById("trait-text-area").value}`;
+  msg += `\nAbilities:\n`;
+  msg += `${document.getElementById("trait-text-area").value}\n`;
+
+  msg += `Racial Traits:\n`;
+  msg += `${document.getElementById("racial-trait-text-area").value}`;
+
 
   navigator.clipboard.writeText(msg);
 }
