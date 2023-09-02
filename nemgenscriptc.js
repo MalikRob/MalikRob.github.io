@@ -1,3 +1,38 @@
+//****************************************************
+// File: nemgenscriptc.js
+//
+// Purpose: Handled the creation of creature/monster
+// Nemesis sheets.
+//
+// Written By: Blonk
+//
+// Compiler: Visual Studio Code
+//
+// Update Information
+// ------------------
+//
+// Name: Blonk
+// Date: 9/1/2023
+// Description: Added comments and updated copyStats
+// function.
+//
+//****************************************************
+
+//****************************************************
+// Function: physiologies
+//
+// Purpose: Load the relevant skills, equipment, and
+// base line stats of a given archetype when the user
+// clicks one from the dropdown menu.
+//
+// Update Information
+// ------------------
+//
+// Name: Blonk
+// Date: 9/1/2023
+// Description: Added Comment
+//
+//****************************************************
 $(document).ready(function () {
   $("#physiologies").on("change", function () {
     var a = this.value;
@@ -51,6 +86,20 @@ $(document).ready(function () {
     }
   });
 
+  //****************************************************
+  // Function: stars-creature
+  //
+  // Purpose: Increase and decrease stats in accordance
+  // to the currently selected stat priority.
+  //
+  // Update Information
+  // ------------------
+  //
+  // Name: Blonk
+  // Date: 9/1/2023
+  // Description: Added Comment
+  //
+  //****************************************************
   $("#stars-creature").on("change", function () {
     var a = this.value;
 
@@ -173,6 +222,21 @@ $(document).ready(function () {
 
 });
 
+//****************************************************
+// Function: crmiscConditions
+//
+// Purpose: Raises or lowers number of allowed traits
+// and Power Level when Star Rating is selected from
+// it's dropdown menu.
+//
+// Update Information
+// ------------------
+//
+// Name: Blonk
+// Date: 9/1/2023
+// Description: Added Comment
+//
+//****************************************************
 function crmiscConditions() {
 
   switch (document.querySelector("#stars-creature").value) {
@@ -206,6 +270,22 @@ function crmiscConditions() {
   }
 }
 
+//****************************************************
+// Function: selectCrTraits
+//
+// Purpose: To roll a random number, load each trait
+// into a single variable and then load that variable
+// into a static array. A trait is outputed depending
+// on the number rolled.
+//
+// Update Information
+// ------------------
+//
+// Name: Blonk
+// Date: 9/1/2023
+// Description: Added Comment
+//
+//****************************************************
 //TRAITS
 function selectCrTraits() {
   trait = Math.floor(Math.random() * 23) - 1;
@@ -287,6 +367,22 @@ function selectCrTraits() {
 
 }
 
+//****************************************************
+// Function: selectCrLegendaryTraits
+//
+// Purpose: To roll a random number, load each trait
+// into a single variable and then load that variable
+// into a static array. A trait is outputed depending
+// on the number rolled.
+//
+// Update Information
+// ------------------
+//
+// Name: Blonk
+// Date: 9/1/2023
+// Description: Added Comment
+//
+//****************************************************
 //LEGENDARY TRAITS
 function selectCrLegendaryTraits() {
   trait = Math.floor(Math.random() * 13) - 1;
@@ -333,6 +429,22 @@ function selectCrLegendaryTraits() {
   document.querySelector("#crtrait-text-area").value += traits[trait];
 }
 
+//****************************************************
+// Function: copycrPage
+//
+// Purpose: Copy Star Rating, Race, Power Level, 
+// Physiology, Stats, and every text field upon button
+// press.
+//
+// Update Information
+// ------------------
+//
+// Name: Blonk
+// Date: 9/1/2023
+// Description: Add Comment
+// Section
+//
+//****************************************************
 function copycrPage() {
   let msg = "";
 
@@ -351,7 +463,7 @@ function copycrPage() {
   msg += `Charisma: ${document.getElementById("ccha").innerText}\n`;
 
   msg += `\nSkills:\n`;
-  msg += `Skill Tiers - ${document.getElementById("cskillca-num").innerText}\n`;
+  msg += `${document.getElementById("cskillca-num").innerText}\n`;
   msg += `${document.getElementById("c-skills").value}\n`;
   msg += `\nAbilities:\n`;
   msg += `${document.getElementById("crtrait-text-area").value}`;
