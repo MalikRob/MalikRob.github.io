@@ -637,7 +637,7 @@ function selectTraits() {
   t22 =
     "\n22- Elemental Fury: The user gains immunity to a single energy type on the Blaster Table, and access to the stat corresponding to that energy type as a Problem Stat. They may add this stat to any attack and in doing so additionally inflict the Blaster Effect of that given element on their attack, with any DC changing to be equal to double their Star Rating and any DoT changing to be equal to their Star Rating. Each time this is rolled the user may choose to either gain a second element, increase the priority of an Elemental Stat by one, or increase their Star Rating by one for purposes of DCs and DoT with a single element.\n";
   t23 =
-    "\n23-Airborne: The user gains a Flight speed equal to the higher priority of their agiterity or Willpower stats, with ties going to agiterity. They additionally gain access to Fly as a Tertiary Skill, and may add it to their Active Defense while flying.\n";
+    "\n23-Airborne: The user gains a Flight speed equal to the higher priority of their Agility or Willpower stats, with ties going to Agility. They additionally gain access to Fly as a Tertiary Skill, and may add it to their Active Defense while flying.\n";
   t24 =
     "\n24- Unstoppable Machine: The user is a Hao rather than their original race, and uses all non-stat related racial traits of the Torchbearer Initiative 1 Hao race, rather than the Collective.\n";
   t25 =
@@ -649,7 +649,7 @@ function selectTraits() {
   t28 =
     "\n28- As I Live And Breathe, The Wolverine: The user gains access to the Healing Factor stat as a Problem Stat, and each time they gain this ability they may raise it in Stat priority once, up to a Primary Stat.\n";
   t29 =
-    "\n29- Bestial Brute: The user gains access to Unnatural Weapon as a Secondary Skill and increases one of Strength, agiterity, Endurance, or Senses by one in terms of stat priority, to a maximum of Primary. This trait also increase Durability by a flat 2.\n";
+    "\n29- Bestial Brute: The user gains access to Unnatural Weapon as a Secondary Skill and increases one of Strength, Agility, Endurance, or Senses by one in terms of stat priority, to a maximum of Primary. This trait also increase Durability by a flat 2.\n";
   t30 =
     "\n30- Golem: The user increases Strength & Health by 1, Durability is considered Tough(4 Passive Defense as their skin is stony), and Converts Health into Weight. Every time this trait is taken, the user’s PD is increased by 2, capping out at 8.\n";
 
@@ -762,7 +762,21 @@ function selectTraits() {
     "\n82- Brain Punch: The user's physical attacks target MP and Mental Defenses, but do not ignore armor and can be avoided with physical AD, along with dropping one level of Severity to a minimum of Light.\n";
   t83 =
     "\n83- For The Sake Of The World: The user is a Shonen Protagonist and gets restored to full HP/MP, rises one Power Level, and gains 25 SP to assign amongst skills and stats after the first time they're Taken Out. [This counts as 2 Traits instead of 1.]\n";
-
+  t84 =
+    "\n84- Collateral Damage Is My Middle Name: Every attack made by the user either has a Splash rating equal to 20*Star Rating or is considered one size larger for the purpose of damage modification, their choice. [This counts as 3 traits instead of 1.]\n";
+  t85 =
+    "\n85- Just Call Me A Superhero: When fighting for wounded comrades, to rescue civilians, or for any other traditionally heroic reason, the user has the t of all checks reduced by 2. They may nullify this bonus in order to rise to the Spandex Power Level for a number of rounds equal to their Star Rating, after which this ability is entirely inactive for a number of days equal to 10-Star Rating. [This counts as 3 traits instead of 1.]\n";
+  t86 =
+    "\n86- A Good Day To Die: Upon death, the user raises the Power Level of all other enemies in the area by one for the rest of the encounter, as they are compelled to avenge their fallen friend. [This counts as 2 traits instead of 1.]\n";
+  t87 =
+    "\n87- Half As Long, Twice As Bright: The user may drain 1 HP and MP per round to subtract 1 from the t of all checks. Both the drain and the subtraction increase by one every round. HP and MP drained this way are considered to be lost to Heavy damage but do not inflict Injuries. [This counts as 2 traits instead of 1.]\n";
+  t88 =
+    "\n88- Born Unlucky: The t of everyone else in this combat is increased by 2, and the user’s t is increased by 1 due to their long experience managing their bad luck field.\n";
+  t89 =
+    "\n89- Our Battle Will Be Legendary: This Nemesis is at the Cosmic Power Level, and elevates anyone fighting with or against them to the Cosmic Power Level as well, along with multiplying their Health and Willpower by 3. Their very presence brings out the greatest potential in everyone around them, friend or foe.\n";
+  t90 =
+    "\n90- Deflected Blame: The user may transfer all damage it has taken to another target within 100 feet as an action. This includes any and all Injuries inflicted by Damage Severity less than Divine. This may be used an unlimited number of times. [This counts as 2 traits instead of 1.]\n";
+  
   const traits = [];
   traits[0] = t1;
   traits[1] = t2;
@@ -847,6 +861,13 @@ function selectTraits() {
   traits[80] = t81;
   traits[81] = t82;
   traits[82] = t83;
+  traits[83] = t84;
+  traits[84] = t85;
+  traits[85] = t86;
+  traits[86] = t87;
+  traits[87] = t88;
+  traits[88] = t89;
+  traits[89] = t90;
 
   document.querySelector("#trait-text-area").value += traits[trait];
 }
@@ -891,7 +912,11 @@ function selectLegendaryTraits() {
   t11 =
     "\n11. Fucking Speedsters: The user gains access to the Speed Conditional as a Problem Stat, increasing in priority by each time it is rolled up to a maximum of being a Secondary Stat. (This Trait is exclusive to Shanks, Duelists, and Tricksters.)\n";
   t12 =
-    "\n12. Elastic Man: The nemesis' body is rubbery in nature, giving them equalized Durability across their body and Reach to all melee attacks equal to their agiterity. They are immune to physical damage but being hit by ice attacks removes all the benefits of this trait and halves their Durability for 10 - Star Rating rounds.\n";
+    "\n12. Elastic Man: The nemesis' body is rubbery in nature, giving them equalized Durability across their body and Reach to all melee attacks equal to their Agility. They are immune to physical damage but being hit by ice attacks removes all the benefits of this trait and halves their Durability for 10 - Star Rating rounds.\n";
+  t13 =
+    "\n13. The Weight of Your Sins: This Nemesis may, as an action, cause an individual to suffer one point of Extreme HP damage for each sapient being they have slain in their lifetime. Every point of HL damage past what is required to kill an individual adds a Splash Rating of 5.\n";
+  t14 =
+    "\n14. Dark Ritual: The user is in possession of the Mana Stat, treated as if it were a Primary. Their Mana pool restores 50% of itself every turn and automatically succeeds all casting checks as needed as they tap into otherworldly powers.\n";
 
   const traits = [];
   traits[0] = t1;
@@ -906,6 +931,8 @@ function selectLegendaryTraits() {
   traits[9] = t10;
   traits[10] = t11;
   traits[11] = t12;
+  traits[12] = t13;
+  traits[13] = t14;
 
   document.querySelector("#trait-text-area").value += traits[trait];
 }
