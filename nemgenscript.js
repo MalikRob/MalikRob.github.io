@@ -745,7 +745,23 @@ function selectTraits() {
   t74 =
     "\n74- Perfect Feint: The has exceptional mastery over the Sleight of Hand skill, having a base -2t to all checks with it. Additionally, when used to Feint someone (a Tricky check), they completely nullify the ability to parry their next strike against them. Every time this trait is used on a target, pass or fail, the target gains -1t to their Insight/Investigation against the user for the duration of the encounter. (Trickster Specialty)\n";
   t75 =
-    "\n75- The Power of Friendship: This Nemesis is almost always found with another that also possesses this trait, and while both of them are in the same combat they have -2t to all offensive and defensive checks, as well as any other checks that would relate to teamwork. If one of them is Taken Out, the other one has their explosion threshold reduced by 2 until the end of combat. [This counts as 2 Traits instead of 1.]\n";
+    "\n75- The Power of Friendship: The user is almost always found with another that also possesses this trait, and while both of them are in the same combat they have -2t to all offensive and defensive checks, as well as any other checks that would relate to teamwork. If one of them is Taken Out, the other increases in Power Level by one until the end of combat. [This counts as 2 Traits instead of 1.]\n";
+  t76 =
+    "\n76- Tunnel Vision: The user can select a single individual as their Target as an action, which cannot be changed unless the Target is slain. They have -2t to all checks against them, but +1t to all checks against anyone else in the combat. If the Nemesis succeeds in Taking Out their Target, they temporarily rise by one Power Level until combat is over. This trait is rendered inert after use.\n";
+  t77 =
+    "\n77- I'm Feeling Invincible: The user is considered one size larger than they actually are for purposes of HP calculation. Additionally, they may gain Prot equal to their current HP as a reaction, losing one HP each time they do this.\n";
+  t78 =
+    "\n78- My Favorite Knife: This Nemesis is considered one Power Level higher specifically for checks that use a single preferred weapon.\n";
+  t79 =
+    "\n79- The People's Champion: The user gains Might equal to their Strength +2 and has their Health stat raised to be equal to Might if it wasn’t that or higher already. If the user already has Might, they just gain +2 to the stat along with the aforementioned Health increase. [This counts as 2 Traits instead of 1.]\n";
+  t80 =
+    "\n80- Amorphous: This user loses their base +2HP in exchange for their Health stat functioning like an Elementalist Conditional for pool calculation. They are also immune to purely Kinetic injuries. [This counts as 2 Traits instead of 1.]\n";
+  t81 =
+    "\n81- I'm Pulling Myself Together: The user may restore their HP as a Channeling check that scales off their choice of Health or Willpower. Every two successes restores one HP, and this check may be made even while Taken Out so long as they are not completely destroyed.\n";
+  t82 =
+    "\n82- Brain Punch: The user's physical attacks target MP and Mental Defenses, but do not ignore armor and can be avoided with physical AD, along with dropping one level of Severity to a minimum of Light.\n";
+  t83 =
+    "\n83- For The Sake Of The World: The user is a Shonen Protagonist and gets restored to full HP/MP, rises one Power Level, and gains 25 SP to assign amongst skills and stats after the first time they're Taken Out. [This counts as 2 Traits instead of 1.]\n";
 
   const traits = [];
   traits[0] = t1;
@@ -823,6 +839,14 @@ function selectTraits() {
   traits[72] = t73;
   traits[73] = t74;
   traits[74] = t75;
+  traits[75] = t76;
+  traits[76] = t77;
+  traits[77] = t78;
+  traits[78] = t79;
+  traits[79] = t80;
+  traits[80] = t81;
+  traits[81] = t82;
+  traits[82] = t83;
 
   document.querySelector("#trait-text-area").value += traits[trait];
 }
