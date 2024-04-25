@@ -182,28 +182,28 @@ $(document).ready(function () {
     switch (a) {
       case "1":
         exemplary = 5;
-        primary = 3;
-        secondary = 2;
-        unmodified = 1;
+        primary = 4;
+        secondary = 3;
+        unmodified = 2;
         problem = 1;
 
         $("#skillca-num").text("2 Novice, 2 Journeyman");
         break;
 
       case "2":
-        exemplary = 7;
+        exemplary = 6;
         primary = 5;
-        secondary = 3;
-        unmodified = 2;
-        problem = 1;
+        secondary = 4;
+        unmodified = 3;
+        problem = 2;
 
         $("#skillca-num").text("3 Novice, 2 Journeyman");
         break;
 
       case "3":
-        exemplary = 9;
-        primary = 7;
-        secondary = 4;
+        exemplary = 7;
+        primary = 5;
+        secondary = 5;
         unmodified = 3;
         problem = 2;
 
@@ -211,8 +211,8 @@ $(document).ready(function () {
         break;
 
       case "4":
-        exemplary = 11;
-        primary = 9;
+        exemplary = 8;
+        primary = 6;
         secondary = 5;
         unmodified = 4;
         problem = 3;
@@ -221,9 +221,9 @@ $(document).ready(function () {
         break;
 
       case "5":
-        exemplary = 14;
-        primary = 12;
-        secondary = 7;
+        exemplary = 9;
+        primary = 7;
+        secondary = 6;
         unmodified = 5;
         problem = 4;
 
