@@ -238,7 +238,6 @@ $(document).ready(function () {
         $("#str").text(secondary);
         $("#sta").text(unmodified);
         $("#agi").text(problem);
-        $("#dur").text("2");
         $("#hea").text(primary);
         $("#per").text(secondary);
         $("#int").text(unmodified);
@@ -251,7 +250,6 @@ $(document).ready(function () {
         $("#str").text(primary);
         $("#sta").text(primary);
         $("#agi").text(unmodified);
-        $("#dur").text("2");
         $("#hea").text(secondary);
         $("#per").text(unmodified);
         $("#int").text(problem);
@@ -264,7 +262,6 @@ $(document).ready(function () {
         $("#str").text(unmodified);
         $("#sta").text(unmodified);
         $("#agi").text(secondary);
-        $("#dur").text("2");
         $("#hea").text(problem);
         $("#per").text(secondary);
         $("#int").text(primary);
@@ -277,7 +274,6 @@ $(document).ready(function () {
         $("#str").text(problem);
         $("#sta").text(primary);
         $("#agi").text(primary);
-        $("#dur").text("2");
         $("#hea").text(secondary);
         $("#per").text(secondary);
         $("#int").text(secondary);
@@ -290,7 +286,6 @@ $(document).ready(function () {
         $("#str").text(unmodified);
         $("#sta").text(secondary);
         $("#agi").text(primary);
-        $("#dur").text("2");
         $("#hea").text(problem);
         $("#per").text(primary);
         $("#int").text(unmodified);
@@ -303,7 +298,6 @@ $(document).ready(function () {
         $("#str").text(secondary);
         $("#sta").text(secondary);
         $("#agi").text(secondary);
-        $("#dur").text("2");
         $("#hea").text(secondary);
         $("#per").text(secondary);
         $("#int").text(secondary);
@@ -318,7 +312,6 @@ $(document).ready(function () {
         $("#str").text(problem);
         $("#sta").text(unmodified);
         $("#agi").text(primary);
-        $("#dur").text("2");
         $("#hea").text(unmodified);
         $("#per").text(primary);
         $("#int").text(secondary);
@@ -331,7 +324,6 @@ $(document).ready(function () {
         $("#str").text(problem);
         $("#sta").text(exemplary);
         $("#agi").text(secondary);
-        $("#dur").text("2");
         $("#hea").text(problem);
         $("#per").text(secondary);
         $("#int").text(unmodified);
@@ -344,7 +336,6 @@ $(document).ready(function () {
         $("#str").text(unmodified);
         $("#sta").text(secondary);
         $("#agi").text(secondary);
-        $("#dur").text("2");
         $("#hea").text(problem);
         $("#per").text(primary);
         $("#int").text(secondary);
@@ -357,7 +348,6 @@ $(document).ready(function () {
         $("#str").text(primary);
         $("#sta").text(secondary);
         $("#agi").text(unmodified);
-        $("#dur").text("2");
         $("#hea").text(primary);
         $("#per").text(problem);
         $("#int").text(problem);
@@ -957,16 +947,22 @@ function copyStats() {
   msg += `${document.getElementById("race").value}\n`;
   msg += `Power Level: ${document.getElementById("lv").innerText}\n`;
   msg += `${document.getElementById("archetype").value}\n\n`;
+  
+  var counter = 0;
+  counter += document.getElementById("hea").innerText;
+  counter = counter * 2;
+  
+  msg += `${counter}d12 ie12 t4!DC 3, Soak\n`;
 
-  msg += `Strength: ${document.getElementById("str").innerText}\n`;
-  msg += `Stamina: ${document.getElementById("sta").innerText}\n`;
-  msg += `Agility: ${document.getElementById("agi").innerText}\n`;
-  msg += `Durability: ${document.getElementById("dur").innerText}\n`;
-  msg += `Health: ${document.getElementById("hea").innerText}\n`;
-  msg += `Perception: ${document.getElementById("per").innerText}\n`;
-  msg += `Intellect: ${document.getElementById("int").innerText}\n`;
-  msg += `Willpower: ${document.getElementById("wil").innerText}\n`;
-  msg += `Charisma: ${document.getElementById("cha").innerText}\n`;
+  msg += `STR: ${document.getElementById("str").innerText}\n`;
+  msg += `STA: ${document.getElementById("sta").innerText}\n`;
+  msg += `AGI: ${document.getElementById("agi").innerText}\n`;
+  msg += `HLTH: ${document.getElementById("hea").innerText}\n`;
+  msg += `PER: ${document.getElementById("per").innerText}\n`;
+  msg += `INT: ${document.getElementById("int").innerText}\n`;
+  msg += `WILL: ${document.getElementById("wil").innerText}\n`;
+  msg += `CHA: ${document.getElementById("cha").innerText}\n`;
+  msg += `DURA: ${document.getElementById("dur").innerText}\n`;
 
   msg += `\nSkills:\n`;
   msg += `${document.getElementById("skillca-num").innerText}\n`;
